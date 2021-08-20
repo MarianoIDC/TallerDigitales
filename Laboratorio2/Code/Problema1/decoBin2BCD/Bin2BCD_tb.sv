@@ -3,9 +3,8 @@ module Bin2BCD_tb();
 logic [3:0] BIN, BCD1, BCD0;
 logic [6:0] SEG1, SEG0;
 
-Bin2BCD b2b (BIN, BCD1, BCD0);
-BCD2Seg b7s1 (BCD1, SEG1);
-BCD2Seg b7s0 (BCD0, SEG0);
+Bin2BCD b2b (BIN, BCD1, BCD0,SEG1, SEG0);
+
 
 initial begin
 	//0
