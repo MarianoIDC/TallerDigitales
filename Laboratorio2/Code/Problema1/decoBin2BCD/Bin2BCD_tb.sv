@@ -1,11 +1,19 @@
+/*
+MODULO Bin2BCD_tb
+"Modulo que genera el testbench"
+
+*/
+
 module Bin2BCD_tb();
 
+//Variables del test
 logic [3:0] BIN, BCD1, BCD0;
 logic [6:0] SEG1, SEG0;
 
+//Modulo a probar
 Bin2BCD b2b (BIN, BCD1, BCD0,SEG1, SEG0);
 
-
+//variantes implementadas
 initial begin
 	//0
 	BIN = 4'b0000; #10;
@@ -41,6 +49,5 @@ initial begin
 	BIN = 4'b1111; #10;
 
 end
-
 
 endmodule 
