@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY suma4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:25:42  AUGUST 21, 2021"
@@ -65,3 +65,47 @@ set_global_assignment -name EDA_TEST_BENCH_NAME test -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test -section_id test
 set_global_assignment -name EDA_TEST_BENCH_FILE suma4_tb.vhd -section_id test
+set_location_assignment PIN_AB12 -to n_a[0]
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_location_assignment PIN_AC12 -to n_a[1]
+set_location_assignment PIN_AF9 -to n_a[2]
+set_location_assignment PIN_AF10 -to n_a[3]
+set_location_assignment PIN_AD11 -to n_b[0]
+set_location_assignment PIN_AD12 -to n_b[1]
+set_location_assignment PIN_AE11 -to n_b[2]
+set_location_assignment PIN_AC9 -to n_b[3]
+set_location_assignment PIN_AE26 -to sg0[0]
+set_location_assignment PIN_AE27 -to sg0[1]
+set_location_assignment PIN_AE28 -to sg0[2]
+set_location_assignment PIN_AG27 -to sg0[3]
+set_location_assignment PIN_AF28 -to sg0[4]
+set_location_assignment PIN_AG28 -to sg0[5]
+set_location_assignment PIN_AH28 -to sg0[6]
+set_location_assignment PIN_AJ29 -to sg1[0]
+set_location_assignment PIN_AH29 -to sg1[1]
+set_location_assignment PIN_AH30 -to sg1[2]
+set_location_assignment PIN_AG30 -to sg1[3]
+set_location_assignment PIN_AF29 -to sg1[4]
+set_location_assignment PIN_AF30 -to sg1[5]
+set_location_assignment PIN_AD27 -to sg1[6]
+set_location_assignment PIN_AB23 -to sg2[0]
+set_location_assignment PIN_AE29 -to sg2[1]
+set_location_assignment PIN_AD29 -to sg2[2]
+set_location_assignment PIN_AC28 -to sg2[3]
+set_location_assignment PIN_AD30 -to sg2[4]
+set_location_assignment PIN_AC29 -to sg2[5]
+set_location_assignment PIN_AC30 -to sg2[6]
+set_location_assignment PIN_AD26 -to sg3[0]
+set_location_assignment PIN_AC27 -to sg3[1]
+set_location_assignment PIN_AD25 -to sg3[2]
+set_location_assignment PIN_AC25 -to sg3[3]
+set_location_assignment PIN_AB28 -to sg3[4]
+set_location_assignment PIN_AB25 -to sg3[5]
+set_location_assignment PIN_AB22 -to sg3[6]
+set_location_assignment PIN_AA24 -to sg4[0]
+set_location_assignment PIN_Y23 -to sg4[1]
+set_location_assignment PIN_Y24 -to sg4[2]
+set_location_assignment PIN_W22 -to sg4[3]
+set_location_assignment PIN_W24 -to sg4[4]
+set_location_assignment PIN_V23 -to sg4[5]
+set_location_assignment PIN_W25 -to sg4[6]
