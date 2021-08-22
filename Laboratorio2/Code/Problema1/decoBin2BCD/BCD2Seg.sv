@@ -11,12 +11,12 @@ assign C = bcd[1];
 assign D = bcd[0];
 
 //asignacion a los 7 segmentos
-assign seg[6] = (~A&~B&~C&D) | (~A&B&~C&~D);
-assign seg[5] = (A&C) | (A&B) | (B&~C&D) | (B&C&~D);
-assign seg[4] = (A&C) | (A&B) | (~B&C&~D);
+assign seg[0] = (~A&~B&~C&D) | (~A&B&~C&~D);
+assign seg[1] = (A&C) | (A&B) | (B&~C&D) | (B&C&~D);
+assign seg[2] = (A&C) | (A&B) | (~B&C&~D);
 assign seg[3] = (~B&~C&D) | (~A&B&~C&~D) | (~A&B&C&D);
-assign seg[2] = (~A&D) | (~B&~C&D) | (~A&B&~C);
-assign seg[1] = (~A&~B&D) | (~A&~B&C) | (~A&C&D);
-assign seg[0] = (~A&~B&~C) | (~A&B&C&D);
+assign seg[4] = (~A&D) | (~B&~C&D) | (~A&B&~C);
+assign seg[5] = (~A&~B&D) | (~A&~B&C) | (~A&C&D);
+assign seg[6] = (~A&~B&~C) | (~A&B&C&D);
 
 endmodule 
