@@ -1,15 +1,12 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
-"Mariano"
-entity suma6 is
+
+entity suma4 is
     port (
-        --sum : out std_logic_vector (4 downto 0);
-        --m_c_out : out std_logic;
-        n_a : in std_logic_vector (4 downto 0);
-        n_b : in std_logic_vector (4 downto 0);
-        --m_c_in : in std_logic;
+
+        n_a : in std_logic_vector (3 downto 0);
+        n_b : in std_logic_vector (3 downto 0);
 		  
-		  sg5 : out std_logic_vector (6 downto 0);
 		  sg4 : out std_logic_vector (6 downto 0);
 		  sg3 : out std_logic_vector (6 downto 0);
 		  sg2 : out std_logic_vector (6 downto 0);
@@ -18,7 +15,7 @@ entity suma6 is
     );
 end entity;
 
-architecture arch_suma6 of suma6 is
+architecture arch_suma4 of suma4 is
 
     component suma1 is
         port (
@@ -33,9 +30,9 @@ architecture arch_suma6 of suma6 is
 				segx : out std_logic_vector (6 downto 0)
         );
 	 end component;
-    signal sum : std_logic_vector (5 downto 0);
+    signal sum : std_logic_vector (4 downto 0);
 	 
-	 signal aux_c : std_logic_vector (5 downto 0);
+	 signal aux_c : std_logic_vector (4 downto 0);
 	 --signal cOut_aux : std_logic;
 	
 begin
@@ -77,22 +74,9 @@ begin
 		  c_in => aux_c(3),
 		  seg => sg3
 	 );
-	bit_4: suma1 port map (
-        c => sum(4),
-        c_out => aux_c(5),
-        a => n_a(4),
-        b => n_b(4),
-        c_in => aux_c(4),
-		  seg => sg4
+	bit_4: seg7 port map (
+        entry => aux_c(4),
+		  segx => sg4
     );
-	 
-    --m_c_out <= aux_c(5);
-	 --cOut_aux <= aux_c(5);
-	 
-	 bit_5: seg7 port map (
-        entry => aux_c(5),
-		  segx => sg5
-    );
-	 
 
 end architecture;

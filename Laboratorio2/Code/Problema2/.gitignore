@@ -1,8 +1,8 @@
 !*.vhd
 !*.qpf
-/suma6/db
-/suma6/output_files
-/suma6/simulation
-/suma6/incremental
+/suma4/bd
+/suma4/output_files
+/suma4/simulation
+/suma4/incremental
 *.vwf
 *.txt
