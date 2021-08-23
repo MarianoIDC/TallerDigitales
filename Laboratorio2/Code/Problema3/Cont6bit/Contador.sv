@@ -1,4 +1,4 @@
-module Contador #(parameter N=8) 
+module Contador #(parameter N=6) 
 					  (input logic clk, rst,
 						output logic [13:0] outBCD);
 										
@@ -8,7 +8,7 @@ module Contador #(parameter N=8)
 	
 	Deco7Seg deco1 (out[3:0], outBCD[6:0]);
 	
-	Deco7Seg deco2 (out[7:4], outBCD[13:7]);
+	Deco7Seg deco2 (out[5:4], outBCD[13:7]);
 
 endmodule
 	
