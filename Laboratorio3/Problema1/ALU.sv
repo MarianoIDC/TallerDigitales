@@ -24,11 +24,11 @@ Mux mux_sel ();
 
 
 //operaciones aritmeticas
-Suma suma ();
-Resta resta();
-Division div ();
-Multi multi ();
-Modulo modulo ();
+Suma suma ();       //S1
+Resta resta();      //S2
+Division div ();    //S3
+Multi multi ();     //S4
+Modulo modulo ();   //S5
 
 //operaciones logicas
 AND_Gate and_gate ();
