@@ -1,0 +1,434 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/simulation/modelsim
+vadder1bit
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1629673164
+!i10b 1
+!s100 `7CTB4I_3dLZZF::0bzK>2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5jzFb`:znXgYBWoVeI<W30
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1618321422
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder1bit.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder1bit.sv
+!i122 7
+L0 2 10
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1629673164.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder1bit.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu
+Z10 tCvgOpt 0
+vadder4bits
+R1
+R2
+!i10b 1
+!s100 DF^7Oz9_mA9hB2_]55bC?1
+R3
+IHd?^2gaTlIjTQ]kd]CkAV1
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder4bits.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder4bits.sv
+!i122 8
+L0 6 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder4bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/adder4bits.sv|
+!i113 1
+R8
+R9
+R10
+valu
+R1
+Z11 !s110 1629673165
+!i10b 1
+!s100 2M6?C:QOk3N18zb[5P1la3
+R3
+I;[bf2::bI@YXLfD5B]2=E1
+R4
+S1
+R0
+w1629602030
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/alu.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/alu.sv
+!i122 12
+L0 6 25
+R6
+r1
+!s85 0
+31
+Z12 !s108 1629673165.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/alu.sv|
+!i113 1
+R8
+R9
+R10
+valuTest
+R1
+R11
+!i10b 1
+!s100 X2C`ao8^WWI=ROQkzSG9m3
+R3
+Ii5dF2J;:Yjf<W5oAcI?;C2
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/aluTest.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/aluTest.sv
+!i122 15
+L0 1 248
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/aluTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/aluTest.sv|
+!i113 1
+R8
+R9
+R10
+nalu@test
+vandN
+R1
+R2
+!i10b 1
+!s100 7`z>HZA`0aaP[dKZTFN]Y2
+R3
+IW[dQDnZX7ohAKFCS@I9>21
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/andN.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/andN.sv
+!i122 5
+Z13 L0 1 12
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/andN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/andN.sv|
+!i113 1
+R8
+R9
+R10
+nand@n
+vcompA2
+R1
+R11
+!i10b 1
+!s100 MRKSDg]8bPi[D3VV3^?k72
+R3
+IAGHTf5c4@ZGWiVai;279e1
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/compA2.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/compA2.sv
+!i122 13
+L0 4 7
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/compA2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/compA2.sv|
+!i113 1
+R8
+R9
+R10
+ncomp@a2
+vdivision
+R1
+R2
+!i10b 1
+!s100 zXVzhRn13H_IXiEDe_`2b0
+R3
+I9k2CT_og_:W[Z2:VbO@`F3
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/division.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/division.sv
+!i122 6
+R13
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/division.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/division.sv|
+!i113 1
+R8
+R9
+R10
+vflagGenerator
+R1
+R11
+!i10b 1
+!s100 `z^TAT7`dcN7m<H^4OL=d2
+R3
+I?3_g;>4ZKHF0l1^JnlC[X3
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/flagGenerator.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/flagGenerator.sv
+!i122 14
+L0 1 27
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/flagGenerator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/flagGenerator.sv|
+!i113 1
+R8
+R9
+R10
+nflag@generator
+vmodulo
+R1
+R2
+!i10b 1
+!s100 zW[DaQ4X_HC@:_o8X<;WC3
+R3
+IA1_Z2@Wm^lWm=Cz>@]9aS2
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/modulo.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/modulo.sv
+!i122 4
+R13
+R6
+r1
+!s85 0
+31
+Z14 !s108 1629673163.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/modulo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/modulo.sv|
+!i113 1
+R8
+R9
+R10
+vmultiplicacion
+R1
+Z15 !s110 1629673163
+!i10b 1
+!s100 Q=k[HKQ]Eh;o=WBf4E1@Q0
+R3
+Ibnh2k3:EGV0D?^N99:5=N2
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/multiplicacion.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/multiplicacion.sv
+!i122 3
+L0 1 22
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/multiplicacion.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/multiplicacion.sv|
+!i113 1
+R8
+R9
+R10
+vmuxN
+R1
+R2
+!i10b 1
+!s100 >dRg;z]chZH]l3>g4?93A2
+R3
+IPo:]=[QS7k?]Cd2G9ki@K2
+R4
+S1
+R0
+w1629602027
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/muxN.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/muxN.sv
+!i122 9
+L0 18 21
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/muxN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/muxN.sv|
+!i113 1
+R8
+R9
+R10
+nmux@n
+vorN
+R1
+R11
+!i10b 1
+!s100 ^IG]3L@h=17?mcM29]nzV3
+R3
+IR?N;8U:h4CfJ8AkJEGCQz0
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/orN.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/orN.sv
+!i122 10
+L0 5 10
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/orN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/orN.sv|
+!i113 1
+R8
+R9
+R10
+nor@n
+vsll
+R1
+R15
+!i10b 1
+!s100 K@6i[6_AhC6U^VSDNM]273
+R3
+ILQl3>3VPnR9]1W2`J><D43
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sll.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sll.sv
+!i122 2
+Z16 L0 1 9
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sll.sv|
+!i113 1
+R8
+R9
+R10
+vsrl
+R1
+R15
+!i10b 1
+!s100 F>5VEI_<5dCfoK5ZYzY_R3
+R3
+I6Xld>nXzX:dZT9g6j0VBS2
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/srl.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/srl.sv
+!i122 1
+R16
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/srl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/srl.sv|
+!i113 1
+R8
+R9
+R10
+vsub4bits
+R1
+R11
+!i10b 1
+!s100 >_:BmhPUeDK_4bUGn[fE@2
+R3
+IPhRCh=C?=jKzFP^2>G4Db1
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sub4bits.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sub4bits.sv
+!i122 11
+L0 11 21
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sub4bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/sub4bits.sv|
+!i113 1
+R8
+R9
+R10
+vxorGate
+R1
+R15
+!i10b 1
+!s100 k4Vl7aVmQ?b9[TO9P7L`42
+R3
+I;4;Q?4c^71TQiE`;JHAUj3
+R4
+S1
+R0
+R5
+8D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/xorGate.sv
+FD:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/xorGate.sv
+!i122 0
+R16
+R6
+r1
+!s85 0
+31
+R14
+!s107 D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/xorGate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu|D:/Users/Mariano/Documentos/GitHub/taller_logico-laboratorio_3/alu/xorGate.sv|
+!i113 1
+R8
+R9
+R10
+nxor@gate
