@@ -1,11 +1,11 @@
-module OR_Gate ();
+module OR_Gate #(parameter P)(a, b, s);
 
-	input logic [N:0] a, b;
-	output logic [N:0] s;
+	input logic [P:0] a, b;
+	output logic [P:0] s;
 
 	always_comb
 	begin
-		assign s = a|b;
+		s = a|b;
 	end
     
 endmodule
