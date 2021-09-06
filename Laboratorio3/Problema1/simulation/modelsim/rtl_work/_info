@@ -1,0 +1,359 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/simulation/modelsim
+vadder1bit
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1630910154
+!i10b 1
+!s100 Y1h4oh@GUFIBG[61`USS<1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISK:z2h4M6[W^f2e7Ga91Z2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1630641226
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/adder1bit.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/adder1bit.sv
+!i122 8
+L0 1 10
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1630910154.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/adder1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/adder1bit.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1
+Z9 tCvgOpt 0
+vALU
+R1
+R2
+!i10b 1
+!s100 Ae8>XG^<SXzg`20[:WR^e1
+R3
+I1ki8FR;@o4gCYFZal7Bg<1
+R4
+S1
+R0
+w1630909648
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU.sv
+!i122 7
+L0 16 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU.sv|
+!i113 1
+R7
+R8
+R9
+n@a@l@u
+vALU_tb
+R1
+Z10 !s110 1630910155
+!i10b 1
+!s100 4fNaU0ClJG[jmJmhUMV]W3
+R3
+IPAFCmlgc@k`Yfa9ob_NoK3
+R4
+S1
+R0
+w1630909445
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv
+!i122 12
+L0 1 201
+R5
+r1
+!s85 0
+31
+Z11 !s108 1630910155.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv|
+!i113 1
+R7
+R8
+R9
+n@a@l@u_tb
+vAND_Gate
+R1
+R2
+!i10b 1
+!s100 SBkO10@e4F@@W1ng2UIAi0
+R3
+IQ9nU3Vkj:Ta?ca]nU;_CU2
+R4
+S1
+R0
+w1630643770
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/AND_Gate.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/AND_Gate.sv
+!i122 4
+Z12 L0 1 11
+R5
+r1
+!s85 0
+31
+Z13 !s108 1630910153.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/AND_Gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/AND_Gate.sv|
+!i113 1
+R7
+R8
+R9
+n@a@n@d_@gate
+vcompA2
+R1
+R2
+!i10b 1
+!s100 E3_gZ[TO^]34zI@U42NQE3
+R3
+IHSbnFh9U_LLLJ[ji0G:4<2
+R4
+S1
+R0
+w1630907603
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/compA2.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/compA2.sv
+!i122 9
+L0 4 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/compA2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/compA2.sv|
+!i113 1
+R7
+R8
+R9
+ncomp@a2
+vflagMux
+R1
+R10
+!i10b 1
+!s100 H7g@Xc>ehK^9LhP2Gi>gi1
+R3
+IZh9W2G=10<og^I4n8@3fi2
+R4
+S1
+R0
+w1630910112
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/flagMux.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/flagMux.sv
+!i122 11
+L0 1 24
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/flagMux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/flagMux.sv|
+!i113 1
+R7
+R8
+R9
+nflag@mux
+vmuxN
+R1
+R10
+!i10b 1
+!s100 Beb2O:O@1TJeEKd<F27Ig2
+R3
+IkLT355Q1QLZ2Dzieg2U0a1
+R4
+S1
+R0
+w1630907582
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/muxN.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/muxN.sv
+!i122 10
+L0 1 18
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/muxN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/muxN.sv|
+!i113 1
+R7
+R8
+R9
+nmux@n
+vOR_Gate
+R1
+Z14 !s110 1630910153
+!i10b 1
+!s100 M^G9nYP9]__[PYoi[_4<k0
+R3
+IU0acj@j;niW`IZA5>`dRS1
+R4
+S1
+R0
+w1630907283
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/OR_Gate.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/OR_Gate.sv
+!i122 3
+R12
+R5
+r1
+!s85 0
+31
+R13
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/OR_Gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/OR_Gate.sv|
+!i113 1
+R7
+R8
+R9
+n@o@r_@gate
+vResta
+R1
+R2
+!i10b 1
+!s100 CAmfak_ZGcLSfH2ORC?2P3
+R3
+IdWG10N7oZYB>3UN^<]^[b0
+R4
+S1
+R0
+w1630908245
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Resta.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Resta.sv
+!i122 6
+L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Resta.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Resta.sv|
+!i113 1
+R7
+R8
+R9
+n@resta
+vsl
+R1
+R14
+!i10b 1
+!s100 3Y5<[JVhzPP6T2d]8@_z;1
+R3
+IjA73nc]PViT=?VL3>6LeY3
+R4
+S1
+R0
+w1630907323
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sl.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sl.sv
+!i122 2
+R12
+R5
+r1
+!s85 0
+31
+R13
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sl.sv|
+!i113 1
+R7
+R8
+R9
+vsr
+R1
+!s110 1630910152
+!i10b 1
+!s100 IBdD;ic<413aei770J0?>0
+R3
+IPeneLAkR:eo]PaTf7LUdU1
+R4
+S1
+R0
+w1630907291
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sr.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sr.sv
+!i122 0
+R12
+R5
+r1
+!s85 0
+31
+!s108 1630910152.000000
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/sr.sv|
+!i113 1
+R7
+R8
+R9
+vSuma
+R1
+R2
+!i10b 1
+!s100 bdeEokB[[b1lbZgImRmoE0
+R3
+IUCSK>h37SA?n3aFM6Q1@j2
+R4
+S1
+R0
+w1630909086
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Suma.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Suma.sv
+!i122 5
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Suma.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/Suma.sv|
+!i113 1
+R7
+R8
+R9
+n@suma
+vXOR_Gate
+R1
+R14
+!i10b 1
+!s100 0<QmGT[C38:4k[88@:I_Q2
+R3
+IS399:2MfK9aF=23Llke8c0
+R4
+S1
+R0
+w1630907315
+8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/XOR_Gate.sv
+FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/XOR_Gate.sv
+!i122 1
+R12
+R5
+r1
+!s85 0
+31
+R13
+!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/XOR_Gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/XOR_Gate.sv|
+!i113 1
+R7
+R8
+R9
+n@x@o@r_@gate

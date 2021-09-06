@@ -1,4 +1,5 @@
 
+
 //Entradas lógicas A y B de N bits
 //Entrada de selección de operación S de 4 Bits
 //Salida Resultado de operaciones Q
