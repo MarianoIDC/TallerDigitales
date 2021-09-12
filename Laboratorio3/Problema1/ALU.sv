@@ -13,12 +13,13 @@
 
 */
 
-module ALU #(parameter P = 4)(A, B, OP, Result, N, Z, C, V);
+module ALU #(parameter P = 4)(A, B, OP, Result, N, Z, C, V, seg0, seg1, seg2, seg3);
 
 //Variables de Entrada
 input logic [P-1:0] A, B;
 input logic [2:0] OP;
 output logic [P-1:0] Result;
+output logic [6:0] seg0, seg1, seg2, seg3;
 
 output logic Z = 0, N = 0, C = 0, V = 0;
 logic C_out, Sign;
@@ -40,5 +41,12 @@ sr #(P) sr_mod (A, B, OP_7);				//OP7
 muxN mux_sel (OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7, OP, Result);
 
 flagMux #(P) flag_generator_mod (Result, OP, C_out,Sign, Z,N,V,C);
+
+
+
+decoderBCD seg_0 (Result[0], seg0);
+decoderBCD seg_1 (Result[1], seg1);
+decoderBCD seg_2 (Result[2], seg2);
+decoderBCD seg_3 (Result[3], seg3);
     
 endmodule

@@ -17,6 +17,7 @@ vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/L
 vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/compA2.sv}
 vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/muxN.sv}
 vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/flagMux.sv}
+vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/decoderBCD.sv}
 
 vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv}
 

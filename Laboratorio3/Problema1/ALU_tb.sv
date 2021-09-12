@@ -4,7 +4,7 @@ module ALU_tb();
 	logic [n-1:0] Result;//Resultado
 	logic[2:0] OP; ///Selector de operadores
 	logic Z,N,V,C;
-   ALU #(4)DUT(A, B, OP, Result ,N ,Z ,V ,C);
+   ALU #(4)DUT(A, B, OP, Result ,N ,Z ,V ,C, seg0, seg1, seg2, seg3);
 	
 	initial 
 	begin

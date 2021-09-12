@@ -5,15 +5,20 @@ output logic [P-1:0] RES;
 output logic Sign;
 
 logic [P-1:0] Temp, Q;
-wire [P-1:0] Sign_aux;
 
+wire [P:0] Sign_aux;
+
+genvar i;
 
 adder1bit Bit0 (A[0], ~B[0], 1'b1, Sign_aux[1], Temp[0]);
-adder1bit Bit1 (A[1], ~B[1], Sign_aux[1], Sign_aux[2], Temp[1]);
-adder1bit Bit2 (A[2], ~B[2], Sign_aux[2], Sign_aux[3], Temp[2]);
-adder1bit Bit3 (A[3], ~B[3], Sign_aux[3], Sign, Temp[3]);
 
+generate
+	for (i = 1; i < P; i=i+1)begin : resta_N
+		adder1bit BitN (A[i], ~B[i], Sign_aux[i], Sign_aux[i+1], Temp[i]);
+	end
+endgenerate
 
+assign Sign = Sign_aux[P];
 compA2 compl(Temp,Q);
 	
 	always_comb 
