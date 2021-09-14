@@ -81,14 +81,14 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ALU_tb.sv -section_id ALU_test
 set_global_assignment -name SYSTEMVERILOG_FILE flagMux.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decoderBCD.sv
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_location_assignment PIN_AF10 -to A[0]
-set_location_assignment PIN_AF9 -to A[1]
-set_location_assignment PIN_AC12 -to A[2]
-set_location_assignment PIN_AB12 -to A[3]
-set_location_assignment PIN_AC9 -to B[0]
-set_location_assignment PIN_AE11 -to B[1]
-set_location_assignment PIN_AD12 -to B[2]
-set_location_assignment PIN_AD11 -to B[3]
+set_location_assignment PIN_AB12 -to A[0]
+set_location_assignment PIN_AC12 -to A[1]
+set_location_assignment PIN_AF9 -to A[2]
+set_location_assignment PIN_AF10 -to A[3]
+set_location_assignment PIN_AD11 -to B[0]
+set_location_assignment PIN_AD12 -to B[1]
+set_location_assignment PIN_AE11 -to B[2]
+set_location_assignment PIN_AC9 -to B[3]
 set_location_assignment PIN_V17 -to C
 set_location_assignment PIN_W16 -to N
 set_location_assignment PIN_AA14 -to OP[0]
