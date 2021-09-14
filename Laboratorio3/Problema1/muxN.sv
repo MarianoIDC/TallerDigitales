@@ -1,3 +1,4 @@
+
 module  muxN #(parameter P=4)(OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7,OP,Result);
 	input logic [P-1:0] OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7;
 	input logic [2:0] OP;
