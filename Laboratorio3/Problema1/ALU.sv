@@ -22,6 +22,7 @@ output logic [P-1:0] Result;
 output logic [6:0] seg0, seg1, seg2, seg3;
 
 output logic Z = 0, N = 0, C = 0, V = 0;
+				//led0	led1	led2		led3
 logic C_out, Sign;
 
 wire [P-1:0] OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7;
