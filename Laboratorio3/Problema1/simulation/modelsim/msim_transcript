@@ -251,3 +251,5 @@ run -all
 # 
 # ** Error: 0011 failed.
 #    Time: 143 ps  Scope: ALU_tb File: D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Laboratorio3/Problema1/ALU_tb.sv Line: 81
+# End time: 01:21:38 on Sep 14,2021, Elapsed time: 0:45:48
+# Errors: 6, Warnings: 8
