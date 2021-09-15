@@ -19,13 +19,12 @@ generate
 endgenerate
 
 assign Sign = Sign_aux[P];
-compA2 compl(Temp,Q);
-	
-	always_comb 
-	begin
-		if(Sign==0)//Si es negativo
-			RES<=Q;//Al resultado se le aplica complemento A2 
-
-			RES<=Temp;//Resultado Positivo
-	end
+compA2 #(P) compl(Temp,Q);
+always_comb
+begin
+	if(Sign==0)//Si es negativo
+		RES<=Q;//Al resultado se le aplica complemento A2 
+	else
+		RES<=Temp;//Resultado Positivo
+end
 endmodule 
