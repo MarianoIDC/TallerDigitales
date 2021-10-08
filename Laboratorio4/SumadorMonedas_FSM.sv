@@ -1,4 +1,4 @@
-module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
+module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100, suma500, enable);
 
 
 //Variables del modulo
@@ -13,7 +13,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 	input logic [1:0] moneda;
 //Salidas
 	//Senial de Enable para los modulos que preparan la bebida
-	output logic suma100, suma500;
+	output logic suma100, suma500, enable;
 
 	
 //Variables Temporales
@@ -32,7 +32,9 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 //actual state
 	always_ff @(posedge clk or posedge rst)
 		if (rst) 
-			actual_state = S0; 
+			actual_state = S0;
+		else if(sel!=0)
+			actual_state = S3;
 		else 
 			actual_state = next_state;
 
@@ -46,7 +48,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 					begin
 						next_state = S1;
 					end
-					else if (moneda == 2'b11) 
+					else if (moneda == 2'b10) 
 					begin;
 						next_state = S2;
 					end
@@ -58,7 +60,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 					begin
 						next_state = S1;
 					end
-					else if (moneda == 2'b11) 
+					else if (moneda == 2'b10) 
 					begin
 						next_state = S2;
 					end
@@ -70,7 +72,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 					begin
 						next_state = S1;
 					end
-					else if (moneda == 2'b11) 
+					else if (moneda == 2'b10) 
 					begin
 						next_state = S2;
 					end
@@ -78,20 +80,12 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100,suma500);
 				end
 				S3:
 				begin
-					if (moneda == 2'b01) 
-					begin
-						next_state = S1;
-					end
-					else if (moneda == 2'b11) 
-					begin
-						next_state = S2;
-					end
-					else next_state = S0;
+					next_state = S3;
 				end
 	endcase
 assign suma100 = (actual_state == S1);
 assign suma500 = (actual_state == S2);
-	
+assign enable = (actual_state == S3);
 		
 		
 endmodule
