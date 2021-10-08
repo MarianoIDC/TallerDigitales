@@ -1,4 +1,4 @@
-module SumadorMonedas(clk, rst, moneda, sel, monto, enable);
+module SumadorMonedas(clk, rst, moneda, sel, monto, vuelto, enable);
 
 //Variables del modulo
 //Entradas
@@ -16,7 +16,7 @@ module SumadorMonedas(clk, rst, moneda, sel, monto, enable);
 		100 01
 		500 10
 	*/
-	input logic [1:0] sel;
+	input logic [2:0] sel;
 	input logic [1:0] moneda;
 //Salidas
 	output logic enable;
@@ -27,7 +27,9 @@ module SumadorMonedas(clk, rst, moneda, sel, monto, enable);
 	
 	SumadorMonedas_FSM sum_FSM (.clk(clk), .rst(rst), .moneda(moneda), .sel(sel), .suma100(suma100), .suma500(suma500), .enable(enable));
 	SumadorMonedas_Sumador sum_sum (.clk(clk), .rst(rst), .suma100(suma100), .suma500(suma500), .suma(suma));
-
+	SumadorMonedar_Vuelto (.clk(clk), .rst(rst), .enable(enable), .sel(sel), [11:0] suma, output logic [11:0] vuelto);
+	
+	
 	assign monto = suma;
 		
 endmodule

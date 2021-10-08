@@ -9,7 +9,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100, suma500, enable);
 		100 01
 		500 10
 	*/
-	input logic [1:0] sel;
+	input logic [2:0] sel;
 	input logic [1:0] moneda;
 //Salidas
 	//Senial de Enable para los modulos que preparan la bebida
