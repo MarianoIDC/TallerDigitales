@@ -33,7 +33,7 @@ module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100, suma500, enable);
 	always_ff @(posedge clk or posedge rst)
 		if (rst) 
 			actual_state = S0;
-		else if(sel!=0)
+		else if(sel!=3'b000)
 			actual_state = S3;
 		else 
 			actual_state = next_state;

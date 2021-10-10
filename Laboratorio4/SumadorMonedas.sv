@@ -21,14 +21,16 @@ module SumadorMonedas(clk, rst, moneda, sel, monto, vuelto, enable);
 //Salidas
 	output logic enable;
 	output logic [11:0] monto;
+	output logic [11:0] vuelto;
 //Variables locales
 	logic suma100, suma500;
 	logic [11:0] suma;
+	logic fallo, enable_suma;
 	
 	SumadorMonedas_FSM sum_FSM (.clk(clk), .rst(rst), .moneda(moneda), .sel(sel), .suma100(suma100), .suma500(suma500), .enable(enable));
-	SumadorMonedas_Sumador sum_sum (.clk(clk), .rst(rst), .suma100(suma100), .suma500(suma500), .suma(suma));
-	SumadorMonedar_Vuelto (.clk(clk), .rst(rst), .enable(enable), .sel(sel), [11:0] suma, output logic [11:0] vuelto);
-	
+	SumadorMonedas_Sumador sum_sum (.clk(clk), .rst(rst), .enable(enable), .suma100(suma100), .suma500(suma500), .suma(suma));
+//	FlipFlop sum_ff (.clk(clk), .D(enable), .we(1), .Q(enable_suma));
+	SumadorMonedar_Vuelto sum_vuelto(.rst(rst), .enable(enable), .sel(sel), .suma(suma), .vuelto(vuelto), .fallo(fallo));
 	
 	assign monto = suma;
 		
