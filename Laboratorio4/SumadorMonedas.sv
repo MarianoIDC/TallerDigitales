@@ -29,8 +29,8 @@ module SumadorMonedas(clk, rst, moneda, sel, monto, vuelto, enable);
 	
 	SumadorMonedas_FSM sum_FSM (.clk(clk), .rst(rst), .moneda(moneda), .sel(sel), .suma100(suma100), .suma500(suma500), .enable(enable));
 	SumadorMonedas_Sumador sum_sum (.clk(clk), .rst(rst), .enable(enable), .suma100(suma100), .suma500(suma500), .suma(suma));
-//	FlipFlop sum_ff (.clk(clk), .D(enable), .we(1), .Q(enable_suma));
-	SumadorMonedar_Vuelto sum_vuelto(.rst(rst), .enable(enable), .sel(sel), .suma(suma), .vuelto(vuelto), .fallo(fallo));
+	FlipFlop sum_ff (.clk(clk), .D(enable), .we(1), .Q(enable_suma));
+	SumadorMonedar_Vuelto sum_vuelto(.rst(rst), .enable(enable_suma), .sel(sel), .suma(suma), .vuelto(vuelto), .fallo(fallo));
 	
 	assign monto = suma;
 		
