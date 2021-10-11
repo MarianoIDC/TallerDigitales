@@ -1,0 +1,143 @@
+# Reading pref.tcl
+# do MaqCafe_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/selector_bebida.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:35 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/selector_bebida.sv 
+# -- Compiling module selector_bebida
+# 
+# Top level modules:
+# 	selector_bebida
+# End time: 01:57:35 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/principal.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:35 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/principal.sv 
+# -- Compiling module principal
+# 
+# Top level modules:
+# 	principal
+# End time: 01:57:35 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_cafe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:35 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/disp_cafe.sv 
+# -- Compiling module disp_cafe
+# 
+# Top level modules:
+# 	disp_cafe
+# End time: 01:57:35 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_agua.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:35 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/disp_agua.sv 
+# -- Compiling module disp_agua
+# 
+# Top level modules:
+# 	disp_agua
+# End time: 01:57:36 on Oct 11,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_leche.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:36 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/disp_leche.sv 
+# -- Compiling module disp_leche
+# 
+# Top level modules:
+# 	disp_leche
+# End time: 01:57:36 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_chocolate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:36 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/disp_chocolate.sv 
+# -- Compiling module disp_chocolate
+# 
+# Top level modules:
+# 	disp_chocolate
+# End time: 01:57:36 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_azucar.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:36 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/disp_azucar.sv 
+# -- Compiling module disp_azucar
+# 
+# Top level modules:
+# 	disp_azucar
+# End time: 01:57:36 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/cafe_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:57:36 on Oct 11,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/louis/Desktop/Cafe" C:/Users/louis/Desktop/Cafe/cafe_tb.sv 
+# -- Compiling module cafe_tb
+# 
+# Top level modules:
+# 	cafe_tb
+# End time: 01:57:36 on Oct 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  prueba
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" prueba 
+# Start time: 01:57:36 on Oct 11,2021
+# ** Error: (vsim-3170) Could not find 'prueba'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/louis/Desktop/Cafe/simulation/modelsim/rtl_work
+#             C:/Users/louis/Desktop/Cafe/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./MaqCafe_run_msim_rtl_verilog.do PAUSED at line 18
+vsim rtl_work.cafe_tb
+# vsim rtl_work.cafe_tb 
+# Start time: 01:57:36 on Oct 11,2021
+# Loading sv_std.std
+# Loading work.cafe_tb
+# Loading work.principal
+# Loading work.selector_bebida
+# Loading work.disp_cafe
+# Loading work.disp_agua
+# Loading work.disp_leche
+# Loading work.disp_chocolate
+# Loading work.disp_azucar
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'tipo_bebida'. The port definition is at: C:/Users/louis/Desktop/Cafe/principal.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /cafe_tb/prueba File: C:/Users/louis/Desktop/Cafe/cafe_tb.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'tipo_bebida'. The port definition is at: C:/Users/louis/Desktop/Cafe/selector_bebida.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cafe_tb/prueba/sb File: C:/Users/louis/Desktop/Cafe/principal.sv Line: 8
+add wave -position end  sim:/cafe_tb/clk
+add wave -position end  sim:/cafe_tb/led_agua
+add wave -position end  sim:/cafe_tb/led_azucar
+add wave -position end  sim:/cafe_tb/led_cafe
+add wave -position end  sim:/cafe_tb/led_chocolate
+add wave -position end  sim:/cafe_tb/led_leche
+add wave -position end  sim:/cafe_tb/rst
+add wave -position end  sim:/cafe_tb/tipo_bebida
+run -all
+# ** Note: $stop    : C:/Users/louis/Desktop/Cafe/cafe_tb.sv(24)
+#    Time: 102 sec  Iteration: 0  Instance: /cafe_tb
+# Break in Module cafe_tb at C:/Users/louis/Desktop/Cafe/cafe_tb.sv line 24
+# End time: 02:02:17 on Oct 11,2021, Elapsed time: 0:04:41
+# Errors: 1, Warnings: 2

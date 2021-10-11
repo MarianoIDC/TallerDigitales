@@ -1,0 +1,219 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/louis/Desktop/Cafe/simulation/modelsim
+vcafe_tb
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1633939056
+!i10b 1
+!s100 _iIFNB`>UVzU2EB]993UF3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9Nb:?OI?hA?7e>AmBI<CP0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1633937343
+8C:/Users/louis/Desktop/Cafe/cafe_tb.sv
+FC:/Users/louis/Desktop/Cafe/cafe_tb.sv
+!i122 7
+L0 2 26
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1633939056.000000
+!s107 C:/Users/louis/Desktop/Cafe/cafe_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/cafe_tb.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/louis/Desktop/Cafe
+Z9 tCvgOpt 0
+vdisp_agua
+R1
+R2
+!i10b 1
+!s100 a1g5O[NQ5InobnFW?5[U<2
+R3
+I0>P]SNi[db8dAMRIEA@;c0
+R4
+S1
+R0
+w1633936313
+8C:/Users/louis/Desktop/Cafe/disp_agua.sv
+FC:/Users/louis/Desktop/Cafe/disp_agua.sv
+!i122 3
+Z10 L0 3 30
+R5
+r1
+!s85 0
+31
+Z11 !s108 1633939055.000000
+!s107 C:/Users/louis/Desktop/Cafe/disp_agua.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/disp_agua.sv|
+!i113 1
+R7
+R8
+R9
+vdisp_azucar
+R1
+R2
+!i10b 1
+!s100 hCS_gIKMhD::LjQZ5Pe7Z3
+R3
+IZP0IBJo@6`8J]G?;MR8^91
+R4
+S1
+R0
+w1633936323
+8C:/Users/louis/Desktop/Cafe/disp_azucar.sv
+FC:/Users/louis/Desktop/Cafe/disp_azucar.sv
+!i122 6
+L0 3 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/louis/Desktop/Cafe/disp_azucar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/disp_azucar.sv|
+!i113 1
+R7
+R8
+R9
+vdisp_cafe
+R1
+Z12 !s110 1633939055
+!i10b 1
+!s100 _OkeWbDSO=S2L[ogeUAD60
+R3
+IE^FYkYm?Xzb6cIILk?gVi0
+R4
+S1
+R0
+w1633938970
+8C:/Users/louis/Desktop/Cafe/disp_cafe.sv
+FC:/Users/louis/Desktop/Cafe/disp_cafe.sv
+!i122 2
+Z13 L0 3 37
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/louis/Desktop/Cafe/disp_cafe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/disp_cafe.sv|
+!i113 1
+R7
+R8
+R9
+vdisp_chocolate
+R1
+R2
+!i10b 1
+!s100 M[lhHXb9C84?^i;CT<3JA3
+R3
+IV39eO>B[WO6<CX4c4ITXG3
+R4
+S1
+R0
+w1633936320
+8C:/Users/louis/Desktop/Cafe/disp_chocolate.sv
+FC:/Users/louis/Desktop/Cafe/disp_chocolate.sv
+!i122 5
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/louis/Desktop/Cafe/disp_chocolate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/disp_chocolate.sv|
+!i113 1
+R7
+R8
+R9
+vdisp_leche
+R1
+R2
+!i10b 1
+!s100 <glEof9OKNQ<F=FD;11z71
+R3
+IYfQJJ[F3l_Y?ejNcBKhJ^0
+R4
+S1
+R0
+w1633936316
+8C:/Users/louis/Desktop/Cafe/disp_leche.sv
+FC:/Users/louis/Desktop/Cafe/disp_leche.sv
+!i122 4
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/louis/Desktop/Cafe/disp_leche.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/disp_leche.sv|
+!i113 1
+R7
+R8
+R9
+vprincipal
+R1
+R12
+!i10b 1
+!s100 J?cJ4`6]zLO=2o6>^Y:MX3
+R3
+Ie6T90=zN:Q2K_1RndzE9z3
+R4
+S1
+R0
+w1633932246
+8C:/Users/louis/Desktop/Cafe/principal.sv
+FC:/Users/louis/Desktop/Cafe/principal.sv
+!i122 1
+L0 1 15
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/louis/Desktop/Cafe/principal.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/principal.sv|
+!i113 1
+R7
+R8
+R9
+vselector_bebida
+R1
+R12
+!i10b 1
+!s100 P8Q^We=_2a5S@bkS49[`?2
+R3
+IT9`6[P9R?aaWh0UZi57Dh2
+R4
+S1
+R0
+w1633931873
+8C:/Users/louis/Desktop/Cafe/selector_bebida.sv
+FC:/Users/louis/Desktop/Cafe/selector_bebida.sv
+!i122 0
+L0 1 28
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/louis/Desktop/Cafe/selector_bebida.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/louis/Desktop/Cafe|C:/Users/louis/Desktop/Cafe/selector_bebida.sv|
+!i113 1
+R7
+R8
+R9
