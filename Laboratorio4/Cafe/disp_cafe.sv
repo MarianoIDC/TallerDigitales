@@ -5,7 +5,7 @@ module disp_cafe(input clk, preparar,
 					  output logic led_cafe, siguiente);
 	
 	always @(posedge clk) begin
-		if (preparar == 1'b1) begin
+		if (preparar == 1) begin
 			//Expresso
 			//3 segundos
 			if (bebida [4:3] == 2'b10) begin
