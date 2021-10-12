@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "10/11/2021 01:56:56"
+// DATE "10/11/2021 21:20:49"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,25 +38,26 @@ module principal (
 	led_leche,
 	led_chocolate,
 	led_azucar);
-input 	clk;
-input 	rst;
-input 	[1:0] tipo_bebida;
-output 	led_cafe;
-output 	led_agua;
-output 	led_leche;
-output 	led_chocolate;
-output 	led_azucar;
+input 	reg clk ;
+input 	reg rst ;
+input 	logic [2:0] tipo_bebida ;
+output 	reg led_cafe ;
+output 	reg led_agua ;
+output 	reg led_leche ;
+output 	reg led_chocolate ;
+output 	reg led_azucar ;
 
 // Design Ports Information
-// clk	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rst	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// tipo_bebida[0]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// tipo_bebida[1]	=>  Location: PIN_AF5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led_cafe	=>  Location: PIN_AA25,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led_agua	=>  Location: PIN_AH2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AK27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// rst	=>  Location: PIN_AF18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// tipo_bebida[0]	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// tipo_bebida[1]	=>  Location: PIN_AD19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// tipo_bebida[2]	=>  Location: PIN_AH28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led_cafe	=>  Location: PIN_AD20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led_agua	=>  Location: PIN_W16,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // led_leche	=>  Location: PIN_AE29,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led_chocolate	=>  Location: PIN_J7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led_azucar	=>  Location: PIN_AK3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led_chocolate	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led_azucar	=>  Location: PIN_AK29,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -74,10 +75,11 @@ wire \clk~input_o ;
 wire \rst~input_o ;
 wire \tipo_bebida[0]~input_o ;
 wire \tipo_bebida[1]~input_o ;
+wire \tipo_bebida[2]~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOOBUF_X89_Y9_N39
+// Location: IOOBUF_X82_Y0_N42
 cyclonev_io_obuf \led_cafe~output (
 	.i(gnd),
 	.oe(vcc),
@@ -93,7 +95,7 @@ defparam \led_cafe~output .open_drain_output = "false";
 defparam \led_cafe~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X10_Y0_N59
+// Location: IOOBUF_X52_Y0_N19
 cyclonev_io_obuf \led_agua~output (
 	.i(gnd),
 	.oe(vcc),
@@ -125,7 +127,7 @@ defparam \led_leche~output .open_drain_output = "false";
 defparam \led_leche~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X16_Y81_N2
+// Location: IOOBUF_X18_Y81_N42
 cyclonev_io_obuf \led_chocolate~output (
 	.i(gnd),
 	.oe(vcc),
@@ -141,7 +143,7 @@ defparam \led_chocolate~output .open_drain_output = "false";
 defparam \led_chocolate~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X20_Y0_N53
+// Location: IOOBUF_X82_Y0_N93
 cyclonev_io_obuf \led_azucar~output (
 	.i(gnd),
 	.oe(vcc),
@@ -157,7 +159,7 @@ defparam \led_azucar~output .open_drain_output = "false";
 defparam \led_azucar~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X8_Y0_N52
+// Location: IOIBUF_X80_Y0_N52
 cyclonev_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -168,7 +170,7 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X8_Y81_N35
+// Location: IOIBUF_X50_Y0_N58
 cyclonev_io_ibuf \rst~input (
 	.i(rst),
 	.ibar(gnd),
@@ -179,7 +181,7 @@ defparam \rst~input .bus_hold = "false";
 defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X30_Y81_N1
+// Location: IOIBUF_X8_Y81_N35
 cyclonev_io_ibuf \tipo_bebida[0]~input (
 	.i(tipo_bebida[0]),
 	.ibar(gnd),
@@ -190,7 +192,7 @@ defparam \tipo_bebida[0]~input .bus_hold = "false";
 defparam \tipo_bebida[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X8_Y0_N18
+// Location: IOIBUF_X76_Y0_N18
 cyclonev_io_ibuf \tipo_bebida[1]~input (
 	.i(tipo_bebida[1]),
 	.ibar(gnd),
@@ -201,7 +203,18 @@ defparam \tipo_bebida[1]~input .bus_hold = "false";
 defparam \tipo_bebida[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X45_Y44_N0
+// Location: IOIBUF_X89_Y4_N95
+cyclonev_io_ibuf \tipo_bebida[2]~input (
+	.i(tipo_bebida[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\tipo_bebida[2]~input_o ));
+// synopsys translate_off
+defparam \tipo_bebida[2]~input .bus_hold = "false";
+defparam \tipo_bebida[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X19_Y28_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

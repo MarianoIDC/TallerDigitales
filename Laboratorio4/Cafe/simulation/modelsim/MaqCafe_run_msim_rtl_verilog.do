@@ -8,10 +8,6 @@ vmap work rtl_work
 vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/selector_bebida.sv}
 vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/principal.sv}
 vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_cafe.sv}
-vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_agua.sv}
-vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_leche.sv}
-vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_chocolate.sv}
-vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/disp_azucar.sv}
 
 vlog -sv -work work +incdir+C:/Users/louis/Desktop/Cafe {C:/Users/louis/Desktop/Cafe/cafe_tb.sv}
 
