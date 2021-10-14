@@ -11,6 +11,7 @@ logic [2:0] counter_aux = 3'b000;
 		begin
 			if (counter_aux<bebida)
 			begin
+				enable_cafe = 1'b0;
 				led_agua = 1'b1;
 				counter_aux = counter_aux + 1'b1;
 			end

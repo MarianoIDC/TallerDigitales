@@ -39,7 +39,11 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA6F31C6
+<<<<<<< Updated upstream
 set_global_assignment -name TOP_LEVEL_ENTITY SumadorMonedas_FSM
+=======
+set_global_assignment -name TOP_LEVEL_ENTITY MaquinadeCafe
+>>>>>>> Stashed changes
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:46:29  SEPTEMBER 22, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -58,7 +62,7 @@ set_location_assignment PIN_AB12 -to bebida[1]
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH test_disp -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH test_mc -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME test -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test -section_id test
@@ -82,6 +86,12 @@ set_global_assignment -name SYSTEMVERILOG_FILE test_dispensador.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME test_disp -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_disp
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_disp -section_id test_disp
+set_global_assignment -name SYSTEMVERILOG_FILE MaquinadeCafe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MaquinadeCafe_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME test_mc -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_mc
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_mc -section_id test_mc
+set_global_assignment -name EDA_TEST_BENCH_FILE MaquinadeCafe_tb.sv -section_id test_mc
 set_global_assignment -name EDA_TEST_BENCH_FILE SumadorMonedas_tb.sv -section_id test
 set_global_assignment -name EDA_TEST_BENCH_FILE SumadorMonedas_Sumador_tb.sv -section_id test_sumador
 set_global_assignment -name EDA_TEST_BENCH_FILE test_dispensador.sv -section_id test_disp

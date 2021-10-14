@@ -1,33 +1,28 @@
-`timescale 1s/1ps
+`timescale 1s/1ms
 
-module disp_leche(input logic clk,
-					  input logic [6:0] bebida,
-					  output logic led_leche);
-					  
-	always_ff @(posedge clk) begin
-			//Expresso
-			//0 segundos
-			if (bebida [2:1] == 2'b00) begin
+module disp_leche(input logic clk, enable_leche,
+					  input logic [1:0] bebida,
+					  output logic led_leche, enable_chocolate,
+					  output logic [2:0]counter);
+	
+logic [2:0] counter_aux = 3'b000; 
+	always@(posedge clk) begin
+		if (enable_leche)
+		begin
+			if (counter_aux<bebida)
+			begin
 				led_leche = 1'b1;
-				#0
-				led_leche = 1'b0;
+				counter_aux = counter_aux + 1'b1;
 			end
-			//Café con leche - Mocaccino
-			//1 segundo
-			else if (bebida [2:1] == 2'b01) begin
-				led_leche = 1'b1;
-				#1
-				led_leche = 1'b0;
-			end
-			//Capuccino
-			//2 segundos
-			else if (bebida [2:1] == 2'b10) begin
-				led_leche = 1'b1;
-				#2
-				led_leche = 1'b0;
-			end
-			else begin
-				led_leche = 1'b0;
-			end
+			else
+			begin
+				enable_chocolate = 1'b1;
+				led_leche = 1'b0; 
+			end	
+		end		
 	end
+
+	
+	assign counter = counter_aux;
+	
 endmodule 

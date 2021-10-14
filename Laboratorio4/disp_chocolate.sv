@@ -1,26 +1,28 @@
-`timescale 1s/1ps
+`timescale 1s/1ms
 
-module disp_chocolate(input logic clk,
-					  input logic [6:0] bebida,
-					  output logic led_chocolate);
-					  
-	always_ff @(posedge clk) begin
-			//Expresso - Café con leche - Capuccino
-			//3 segundos
-			if (bebida [0:0] == 1'b0) begin
+module disp_chocolate(input logic clk, enable_chocolate,
+					  input logic [1:0] bebida,
+					  output logic led_chocolate, enable_azucar,
+					  output logic [2:0]counter);
+	
+logic [2:0] counter_aux = 3'b000; 
+	always@(posedge clk) begin
+		if (enable_chocolate)
+		begin
+			if (counter_aux<bebida)
+			begin
 				led_chocolate = 1'b1;
-				#3
-				led_chocolate = 1'b0;
+				counter_aux = counter_aux + 1'b1;
 			end
-			//Mocaccino
-			//2 segundos
-			else if (bebida [0:0] == 1'b1) begin
-				led_chocolate = 1'b1;
-				#2
-				led_chocolate = 1'b0;
-			end
-			else begin
-				led_chocolate = 1'b0;
-			end
+			else
+			begin
+				enable_azucar = 1'b1;
+				led_chocolate = 1'b0; 
+			end	
+		end		
 	end
+
+	
+	assign counter = counter_aux;
+	
 endmodule 
