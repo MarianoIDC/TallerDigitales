@@ -1,8 +1,9 @@
+`timescale 1s/1ms
 module FlipFlop(
-                    input clk,
-                    input D,
-                    input we,
-                    output reg Q 
+                    input logic clk,
+                    input logic D,
+                    input logic we,
+                    output logic Q 
                     );
                     
 always @(posedge clk) 

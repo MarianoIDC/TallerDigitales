@@ -1,3 +1,4 @@
+`timescale 1s/1ms
 module SumadorMonedas_Sumador(input logic clk, rst, enable, suma100,suma500, output logic [11:0] suma);
 //Variables del modulo
 //input logic clk, rst, suma100, suma500;

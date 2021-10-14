@@ -1,3 +1,4 @@
+`timescale 1s/1ms
 module SumadorMonedas_Sumador_tb();
 
 logic clk = 0, rst, suma100, suma500; 

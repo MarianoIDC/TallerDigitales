@@ -2,8 +2,7 @@
 
 module disp_agua(input logic clk, enable_agua,
 					  input logic [1:0] bebida,
-					  output logic led_agua, enable_cafe,
-					  output logic [2:0]counter);
+					  output logic led_agua, enable_cafe);
 	
 logic [2:0] counter_aux = 3'b000; 
 	always@(posedge clk) begin
@@ -21,9 +20,5 @@ logic [2:0] counter_aux = 3'b000;
 				led_agua = 1'b0; 
 			end	
 		end		
-	end
-
-	
-	assign counter = counter_aux;
-	
+	end	
 endmodule 

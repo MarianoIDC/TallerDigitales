@@ -2,8 +2,7 @@
 
 module disp_cafe(input logic clk, enable_cafe,
 					  input logic [1:0] bebida,
-					  output logic led_cafe, enable_leche,
-					  output logic [2:0]counter);
+					  output logic led_cafe, enable_leche);
 	
 logic [2:0] counter_aux = 3'b000; 
 	always@(posedge clk) begin
@@ -20,9 +19,5 @@ logic [2:0] counter_aux = 3'b000;
 				led_cafe = 1'b0; 
 			end	
 		end		
-	end
-
-	
-	assign counter = counter_aux;
-	
+	end	
 endmodule 

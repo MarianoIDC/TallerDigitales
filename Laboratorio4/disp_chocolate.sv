@@ -2,8 +2,7 @@
 
 module disp_chocolate(input logic clk, enable_chocolate,
 					  input logic [1:0] bebida,
-					  output logic led_chocolate, enable_azucar,
-					  output logic [2:0]counter);
+					  output logic led_chocolate, enable_azucar);
 	
 logic [2:0] counter_aux = 3'b000; 
 	always@(posedge clk) begin
@@ -20,9 +19,5 @@ logic [2:0] counter_aux = 3'b000;
 				led_chocolate = 1'b0; 
 			end	
 		end		
-	end
-
-	
-	assign counter = counter_aux;
-	
+	end	
 endmodule 

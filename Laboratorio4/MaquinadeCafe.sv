@@ -1,13 +1,22 @@
 `timescale 1s/1ms
 
-module MaquinadeCafe(input logic clk, rst, enable,
+module MaquinadeCafe(input logic clk, rst,
+							input logic [1:0] moneda,
 							input logic [2:0] sel, 
 							
-							output logic led_agua, led_cafe, led_leche, led_chocolate, led_azucar, enable_fin);
+							output logic led_agua, led_cafe, led_leche, led_chocolate, led_azucar, enable_fin, 
+							output logic [11:0] ingresado, 
+							output logic [11:0] devuelto);
 
 logic [9:0] bebida; 
 
-logic enable_agua,enable_cafe, enable_leche, enable_chocolate, enable_azucar;
+logic enable, enable_agua,enable_cafe, enable_leche, enable_chocolate, enable_azucar;
+
+
+SumadorMonedas mc_sum (clk, rst, moneda, sel, monto, vuelto, enable);
+
+assign ingresado = monto;
+assign devuelto = vuelto;
 
 FlipFlop ff_ena (clk, enable, 1, enable_agua);
 
