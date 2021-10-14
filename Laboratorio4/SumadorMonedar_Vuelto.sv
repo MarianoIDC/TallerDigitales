@@ -1,4 +1,3 @@
-`timescale 1s/1ms
 module SumadorMonedar_Vuelto (input logic rst, enable, input logic [2:0] sel, input logic [11:0] suma, output logic [11:0] vuelto, output logic fallo);
 
 logic [11:0] vuelto_aux;

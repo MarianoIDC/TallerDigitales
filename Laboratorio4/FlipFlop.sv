@@ -1,4 +1,3 @@
-`timescale 1s/1ms
 module FlipFlop(
                     input logic clk,
                     input logic D,

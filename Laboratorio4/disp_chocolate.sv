@@ -1,5 +1,3 @@
-`timescale 1s/1ms
-
 module disp_chocolate(input logic clk, enable_chocolate,
 					  input logic [1:0] bebida,
 					  output logic led_chocolate, enable_azucar);

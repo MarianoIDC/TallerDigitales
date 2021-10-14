@@ -1,5 +1,3 @@
-`timescale 1s/1ms
-
 module disp_leche(input logic clk, enable_leche,
 					  input logic [1:0] bebida,
 					  output logic led_leche, enable_chocolate);

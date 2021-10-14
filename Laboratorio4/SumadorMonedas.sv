@@ -1,4 +1,3 @@
-`timescale 1s/1ms
 module SumadorMonedas(clk, rst, moneda, sel, monto, vuelto, enable);
 
 //Variables del modulo

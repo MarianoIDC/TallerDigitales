@@ -1,4 +1,3 @@
-`timescale 1s/1ms
 module SumadorMonedas_FSM(clk, rst, moneda, sel, suma100, suma500, enable);
 
 

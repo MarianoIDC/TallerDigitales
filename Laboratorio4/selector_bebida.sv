@@ -1,5 +1,3 @@
-`timescale 1s/1ms
-
 module selector_bebida(input logic clk, rst, 
 							  input logic [2:0]tipo_bebida,
 							  output logic [9:0] bebida);

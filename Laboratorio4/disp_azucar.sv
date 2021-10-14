@@ -1,5 +1,3 @@
-`timescale 1s/1ms
-
 module disp_azucar(input logic clk, enable_azucar,
 					  input logic [1:0] bebida,
 					  output logic led_azucar, enable_fin);

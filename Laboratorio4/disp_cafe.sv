@@ -1,5 +1,3 @@
-`timescale 1s/1ms
-
 module disp_cafe(input logic clk, enable_cafe,
 					  input logic [1:0] bebida,
 					  output logic led_cafe, enable_leche);

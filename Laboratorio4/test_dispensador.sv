@@ -1,4 +1,3 @@
-`timescale 1s/1ms
 module test_dispensador();
 
 logic clk = 0, enable_agua;

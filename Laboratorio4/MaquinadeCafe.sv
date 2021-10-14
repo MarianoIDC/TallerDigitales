@@ -1,19 +1,27 @@
-`timescale 1s/1ms
-
-module MaquinadeCafe(input logic clk, rst,
+module MaquinadeCafe(input logic clk_fpga, rst,
 							input logic [1:0] moneda,
 							input logic [2:0] sel, 
-							
 							output logic led_agua, led_cafe, led_leche, led_chocolate, led_azucar, enable_fin, 
 							output logic [11:0] ingresado, 
-							output logic [11:0] devuelto);
+							output logic [11:0] devuelto, 
+							output logic clk);
 
-logic [9:0] bebida; 
+logic [9:0] bebida;
+logic [11:0] monto; 
+logic [11:0] vuelto;
+
+hhclock clk_div (clk_fpga, clk);  
 
 logic enable, enable_agua,enable_cafe, enable_leche, enable_chocolate, enable_azucar;
 
 
-SumadorMonedas mc_sum (clk, rst, moneda, sel, monto, vuelto, enable);
+SumadorMonedas mc_sum (	.clk(clk), 
+								.rst(rst), 
+								.moneda(moneda), 
+								.sel(sel), 
+								.monto(monto), 
+								.vuelto(vuelto), 
+								.enable(enable));
 
 assign ingresado = monto;
 assign devuelto = vuelto;
