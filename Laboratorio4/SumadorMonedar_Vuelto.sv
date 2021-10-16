@@ -4,13 +4,20 @@ logic [11:0] vuelto_aux;
  
 												
 always@(posedge enable or posedge rst)
-	if (rst) 
+	if (rst)
+	begin
 		vuelto_aux <= 12'd0;
+		fallo = 1'b0;
+	end
+		
 	//Selecciona la bebida 1
 	else if (sel == 2'b001)
 	begin
 		if (suma>=12'd300)
+		begin 
 			vuelto_aux <= suma - 12'd300;
+			
+		end	
 		else
 			fallo = 1'b1;
 	end
@@ -18,7 +25,10 @@ always@(posedge enable or posedge rst)
 	else if (sel == 2'b010)
 	begin
 		if (suma>=12'd400)
+			begin 
 			vuelto_aux <= suma - 12'd400;
+			fallo = 1'b0;
+		end	
 		else
 			fallo = 1'b1;
 	end
@@ -26,15 +36,21 @@ always@(posedge enable or posedge rst)
 	else if (sel == 2'b001)
 	begin
 		if (suma>=12'd500)
+			begin 
 			vuelto_aux <= suma - 12'd500;
+			fallo = 1'b0;
+		end	
 		else
 			fallo = 1'b1;
 	end
 	//Selecciona la bebida 4
 	else if (sel == 2'b001)
 	begin
-		if (suma>=12'd500)
-			vuelto_aux <= suma - 12'd500;
+		if (suma>=12'd700)
+			begin 
+			vuelto_aux <= suma - 12'd700;
+			fallo = 1'b0;
+		end	
 		else
 			fallo = 1'b1;
 	end

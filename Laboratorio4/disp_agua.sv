@@ -1,7 +1,7 @@
 module disp_agua(input logic rst, clk, enable_agua,
 					  input logic [1:0] bebida,
 					  output logic led_agua, enable_cafe);
-logic [2:0] counter_aux; 
+logic [2:0] counter_aux = 3'b000; 
 	always@(posedge clk or posedge rst) begin
 		if (rst)
 		begin

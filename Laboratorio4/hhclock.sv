@@ -14,4 +14,9 @@ begin
     end 
 end
 
+
+//output logic clk;
+//input logic clk_fpga;
+//
+//assign clk = clk_fpga; 
 endmodule
