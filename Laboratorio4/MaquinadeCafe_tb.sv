@@ -37,14 +37,14 @@ MaquinadeCafe mc_tb (.clk_fpga(clk_fpga),
 always #20 clk_fpga=~clk_fpga;
 
 initial begin
-	#125000000;
-	rst = 1'b0; #125000000;
+	#20;
+	rst = 1'b0; #20;
 	sel = 3'b000;
-	moneda = 2'b01;#125000000;
-	moneda = 2'b01;#125000000;
-	moneda = 2'b01;#125000000;
-	moneda = 2'b10;#125000000;
-	sel = 3'b001;#125000000;
+	moneda = 2'b01;#20;
+	moneda = 2'b01;#20;
+	moneda = 2'b01;#20;
+	moneda = 2'b10;#20;
+	sel = 3'b001;#20;
 //	sel = 2'b000;
 //	moneda = 2'b01;#10;
 //	moneda = 2'b10;#10;

@@ -2,7 +2,7 @@ module selector_bebida(input logic clk, rst,
 							  input logic [2:0]tipo_bebida,
 							  output logic [9:0] bebida);
 							  
-	always_ff @(posedge clk) begin
+	always_ff @(posedge clk or posedge rst) begin
 		if (rst) begin 
 			bebida = 10'b0000000000;
 		end

@@ -4,7 +4,6 @@ output logic clk = 0;
 input logic clk_fpga; 
 integer count = 1;
 
-
 always @(posedge clk_fpga)
 begin
     if(count == 125000000) begin 

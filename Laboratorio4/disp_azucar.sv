@@ -1,10 +1,16 @@
-module disp_azucar(input logic clk, enable_azucar,
+module disp_azucar(input logic rst, clk, enable_azucar,
 					  input logic [1:0] bebida,
 					  output logic led_azucar, enable_fin);
 	
-logic [2:0] counter_aux = 3'b000; 
-	always@(posedge clk) begin
-		if (enable_azucar)
+logic [2:0] counter_aux; 
+	always@(posedge clk or posedge rst) begin
+		if (rst)
+		begin
+			counter_aux = 3'b000;
+			enable_fin = 1'b0;
+			led_azucar = 1'b0;
+		end
+		else if (enable_azucar)
 		begin
 			if (counter_aux<bebida)
 			begin
