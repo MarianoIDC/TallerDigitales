@@ -6,15 +6,19 @@ module selector_bebida(input logic clk, rst,
 		if (rst) begin 
 			bebida = 10'b0000000000;
 		end
+		//Expresso
 		else if (tipo_bebida == 3'b001) begin
 			bebida = 10'b1011000001;
 		end
+		//Café con leche
 		else if (tipo_bebida == 3'b010) begin
 			bebida = 10'b1010010001;
 		end
+		//Cacpuccino
 		else if (tipo_bebida == 3'b011) begin
 			bebida = 10'b1001100001;
 		end
+		//Mocaccino
 		else if (tipo_bebida == 3'b100) begin
 			bebida = 10'b0101011001;
 		end
