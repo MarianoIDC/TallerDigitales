@@ -46,7 +46,7 @@ initial begin
 	moneda = 2'b01;#40;
 	moneda = 2'b01;#40;
 	moneda = 2'b10;#40;
-	sel = 3'b001;#40;
+	sel = 3'b100;#40;
 //	sel = 2'b000;
 //	moneda = 2'b01;#10;
 //	moneda = 2'b10;#10;

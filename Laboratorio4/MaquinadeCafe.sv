@@ -17,7 +17,7 @@ logic [11:0] cant;
 
 hhclock clk_div (clk_fpga, clk);  
 
-logic enable, enable_agua,enable_cafe, enable_leche, enable_chocolate, enable_azucar;
+logic ena_aux, enable, enable_agua,enable_cafe, enable_leche, enable_chocolate, enable_azucar;
 
 
 SumadorMonedas mc_sum (	.clk(clk), 
@@ -32,7 +32,11 @@ SumadorMonedas mc_sum (	.clk(clk),
 assign ingresado = monto;
 assign devuelto = vuelto;
 
-FlipFlop ff_ena (clk, ~fallo & enable , 1, enable_agua);
+//assign ena_aux = ~fallo & enable;
+
+and and1 (ena_aux, ~fallo, enable);
+
+FlipFlop ff_ena (clk, ena_aux , 1, enable_agua);
 
 selector_bebida sb (clk, rst, sel, bebida);
 
