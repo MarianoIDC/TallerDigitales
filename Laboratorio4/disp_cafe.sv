@@ -1,33 +1,27 @@
-`timescale 1s/1ps
-
-module disp_cafe(input logic clk,
-					  input logic [6:0] bebida,
-					  output logic led_cafe);
-					  
-	always_ff @(posedge clk) begin
-			//Expresso
-			//3 segundos
-			if (bebida [4:3] == 2'b10) begin
+module disp_cafe(input logic rst, clk, enable_cafe,
+					  input logic [1:0] bebida,
+					  output logic led_cafe, enable_leche);
+	
+logic [2:0] counter_aux = 3'b000; 
+	always@(posedge clk or posedge rst) begin
+		if (rst)
+		begin
+			counter_aux = 3'b000;
+			enable_leche = 1'b0;
+			led_cafe = 1'b0;
+		end
+		else if (enable_cafe)
+		begin
+			if (counter_aux<bebida)
+			begin
 				led_cafe = 1'b1;
-				#3
-				led_cafe = 1'b0;
+				counter_aux = counter_aux + 1'b1;
 			end
-			//Café con leche
-			//2 segundos
-			else if (bebida [4:3] == 2'b01) begin
-				led_cafe = 1'b1;
-				#2
-				led_cafe = 1'b0;
-			end
-			//Capuccino - Mocaccino
-			//1 segundo
-			else if (bebida [4:3] == 2'b00) begin
-				led_cafe = 1'b1;
-				#1
-				led_cafe = 1'b0;
-			end
-			else begin
-				led_cafe= 1'b0;
-			end
-	end
+			else
+			begin
+				enable_leche = 1'b1;
+				led_cafe = 1'b0; 
+			end	
+		end		
+	end	
 endmodule 
