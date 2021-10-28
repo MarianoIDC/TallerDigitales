@@ -1,0 +1,63 @@
+# Reading pref.tcl
+# do Clock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Programas/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/Clock.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:50:35 on Aug 20,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock" D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/Clock.sv 
+# -- Compiling module Clock
+# 
+# Top level modules:
+# 	Clock
+# End time: 23:50:35 on Aug 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/Clock_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:50:35 on Aug 20,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock" D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/Clock_tb.sv 
+# -- Compiling module Clock_tb
+# 
+# Top level modules:
+# 	Clock_tb
+# End time: 23:50:35 on Aug 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_clock
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test_clock 
+# Start time: 23:50:36 on Aug 20,2021
+# ** Error: (vsim-3170) Could not find 'test_clock'.
+#         Searched libraries:
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/simulation/modelsim/rtl_work
+#             D:/Users/Mariano/Documentos/GitHub/TallerDigitales/clock/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Clock_run_msim_rtl_verilog.do PAUSED at line 12
+vsim rtl_work.Clock_tb
+# vsim rtl_work.Clock_tb 
+# Start time: 23:50:36 on Aug 20,2021
+# Loading sv_std.std
+# Loading work.Clock_tb
+# Loading work.Clock
+add wave -position insertpoint sim:/Clock_tb/*
+run
+# End time: 00:11:16 on Aug 21,2021, Elapsed time: 0:20:40
+# Errors: 1, Warnings: 0
