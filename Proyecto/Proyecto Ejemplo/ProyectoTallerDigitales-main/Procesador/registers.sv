@@ -1,4 +1,4 @@
-module registers(clk,enable,
+	module registers(clk,enable,
 						rwA,rwB,rwPc,rwResult,//A,B,Rs son operandos
 						dataInA,dataInB,dataInPc,resultIn,
 					   getPc,getResult,
