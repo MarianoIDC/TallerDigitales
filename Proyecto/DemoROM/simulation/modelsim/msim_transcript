@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# do DemoROM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM {C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:43 on Oct 29,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM" C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 15:26:44 on Oct 29,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM {C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/Counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:44 on Oct 29,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM" C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/Counter.sv 
+# -- Compiling module Counter
+# 
+# Top level modules:
+# 	Counter
+# End time: 15:26:45 on Oct 29,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM {C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/rom_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:45 on Oct 29,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoROM" C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/rom_tb.sv 
+# -- Compiling module rom_tb
+# 
+# Top level modules:
+# 	rom_tb
+# End time: 15:26:45 on Oct 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.rom_tb
+# vsim work.rom_tb 
+# Start time: 15:27:20 on Oct 29,2021
+# Loading sv_std.std
+# Loading work.rom_tb
+# Loading work.rom
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /rom_tb/mem File: C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/rom.v Line: 59
+#         Searched libraries:
+#             C:/Users/Usuario/Desktop/Taller/Demos/DemoROM/simulation/modelsim/rtl_work
+# Loading work.Counter
+# Error loading design
+# End time: 15:27:21 on Oct 29,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -L altera_mf_ver -L lpm_ver rom_tb
+# vsim -L altera_mf_ver -L lpm_ver rom_tb 
+# Start time: 15:27:35 on Oct 29,2021
+# Loading sv_std.std
+# Loading work.rom_tb
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.Counter
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position end  sim:/rom_tb/address
+add wave -position end  sim:/rom_tb/q
+add wave -position end  sim:/rom_tb/clk
+add wave -position end  sim:/rom_tb/rst
+force -freeze sim:/rom_tb/rst 1 0
+force -freeze sim:/rom_tb/clk 1 0, 0 {5 ps} -r 10
+run 20
+force -freeze sim:/rom_tb/rst 0 0
+run 200
+# End time: 15:29:28 on Oct 29,2021, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 0
