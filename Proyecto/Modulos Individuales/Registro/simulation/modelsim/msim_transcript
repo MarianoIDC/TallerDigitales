@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# do Registro_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Programas/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:18:11 on Oct 30,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021" D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 00:18:11 on Oct 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021 {D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:18:11 on Oct 30,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021" D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv 
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 00:18:11 on Oct 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  register_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" register_test 
+# Start time: 00:18:11 on Oct 30,2021
+# ** Error: (vsim-3170) Could not find 'register_test'.
+#         Searched libraries:
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             D:/Programas/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/simulation/modelsim/rtl_work
+#             D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Registro_run_msim_rtl_verilog.do PAUSED at line 12
+vsim rtl_work.register_tb
+# vsim rtl_work.register_tb 
+# Start time: 00:18:11 on Oct 30,2021
+# Loading sv_std.std
+# Loading work.register_tb
+# Loading work.register
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'reg_test'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /register_tb/reg_test File: D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv Line: 10
+# ** Warning: (vsim-3722) D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv(10): [TFMPC] - Missing connection for port 'registerBank'.
+add wave -position insertpoint sim:/register_tb/*
+run
+# End time: 00:19:36 on Oct 30,2021, Elapsed time: 0:01:25
+# Errors: 1, Warnings: 2
