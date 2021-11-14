@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM {C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM/rom.v}
+vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM {C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM/Counter.sv}
+vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM {C:/Users/Usuario/Desktop/Quartus/Demos/DemoROM/rom_tb.sv}
+
