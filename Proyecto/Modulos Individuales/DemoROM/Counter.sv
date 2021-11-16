@@ -6,4 +6,5 @@ always_ff @(negedge clk or posedge rst)
 	else
 		if (en)
 			Q = Q + 1'b1;
+			
 endmodule
