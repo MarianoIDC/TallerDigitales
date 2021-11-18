@@ -1,0 +1,83 @@
+# Reading pref.tcl
+# do DemoRAM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM {C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:33:57 on Nov 18,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM" C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 02:33:58 on Nov 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM {C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/Counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:33:58 on Nov 18,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM" C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/Counter.sv 
+# -- Compiling module Counter
+# 
+# Top level modules:
+# 	Counter
+# End time: 02:33:59 on Nov 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM {C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:33:59 on Nov 18,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM" C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram_tb.sv 
+# -- Compiling module ram_tb
+# 
+# Top level modules:
+# 	ram_tb
+# End time: 02:33:59 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.ram_tb
+# vsim work.ram_tb 
+# Start time: 02:35:24 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.ram_tb
+# Loading work.ram
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /ram_tb/mem File: C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram.v Line: 63
+#         Searched libraries:
+#             C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/simulation/modelsim/rtl_work
+# Loading work.Counter
+# Error loading design
+# End time: 02:35:25 on Nov 18,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -L altera_mf_ver -L lpm_ver ram_tb
+# vsim -L altera_mf_ver -L lpm_ver ram_tb 
+# Start time: 02:35:58 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.ram_tb
+# Loading work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.Counter
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (8) for port 'address'. The port definition is at: C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /ram_tb/mem File: C:/Users/Usuario/Desktop/Taller/Demos/DemoRAM/ram_tb.sv Line: 7
+add wave -position end  sim:/ram_tb/clock
+add wave -position end  sim:/ram_tb/wren
+add wave -position end  sim:/ram_tb/rst
+add wave -position end  sim:/ram_tb/address
+add wave -position end  sim:/ram_tb/data
+add wave -position end  sim:/ram_tb/q
+force -freeze sim:/ram_tb/rst 1 0
+force -freeze sim:/ram_tb/clock 1 0, 0 {5 ps} -r 10
+run 20
+force -freeze sim:/ram_tb/rst 0 0
+run 200
+# End time: 02:37:10 on Nov 18,2021, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1
