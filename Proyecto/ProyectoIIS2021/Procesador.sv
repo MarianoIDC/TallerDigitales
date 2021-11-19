@@ -5,7 +5,8 @@ PC iPC (start, clk, rst, branch && zeroFlag, PCp4, PCBranch, dirIntruction); //P
 
 IntructionMemory iIM (dirIntruction, clk, intruction); //Llama el modulo ROM // Prieto
 
-DecoIntruction iDI (intruction, cond, opCode, rm, rn, rd, offset); // Martinez En Progreso
+//Se hicieron los ajustes para Branch
+Deco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rn, Rd, Operand2, OffsetSTD, OffsetBranch); // Listo Martinez 
 
 RegisterFile iRF (clk, rst, we_RF, rm, rn, rd, WD3, RD1, RD2); //Mariano En Progreso
 
@@ -19,7 +20,7 @@ MUX iMux2 (ena_mux2, dataOut, aluResult, WD3); //Por hacer
 
 SignExt iSE (offset, SignImm); // Prieto en Progreso
 
-ShiftLeft iSL (SignImm, SignImm2) //Por hacer
+ShiftLeft iSL (SignImm, SignImm2); //Por hacer
 
 Sumador iPB (SignImm2, PCp4, PCBranch); //Por hacer
 
