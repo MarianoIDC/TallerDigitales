@@ -1,3 +1,4 @@
+//Eliminar este comparador
 module Comparador #(parameter N = 8)(input logic clk, rst, input logic [N - 1:0] letra, 
 												output logic [N - 1:0] C, q);
 												

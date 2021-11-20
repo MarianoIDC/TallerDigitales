@@ -54,4 +54,21 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE PC/Counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Mux/Mux2to1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MemoryData/write_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MemoryData/top_module.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MemoryData/ram_tb.sv
+set_global_assignment -name VERILOG_FILE MemoryData/ram_bb.v
+set_global_assignment -name VERILOG_FILE MemoryData/ram.v
+set_global_assignment -name QIP_FILE MemoryData/ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE InstructionMemory/rom_tb.sv
+set_global_assignment -name VERILOG_FILE InstructionMemory/rom_bb.v
+set_global_assignment -name VERILOG_FILE InstructionMemory/rom.v
+set_global_assignment -name QIP_FILE InstructionMemory/rom.qip
+set_global_assignment -name SYSTEMVERILOG_FILE DecoInstruction/deco_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE DecoInstruction/deco.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Comparador.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Procesador.sv
