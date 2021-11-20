@@ -67,4 +67,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE register_tb.sv -section_id regis
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SOURCE_FILE db/Registro.cmp.rdb
+set_global_assignment -name DEVICE_MIGRATION_LIST "5CSEMA5F31C6,5CSEMA6F31C6"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

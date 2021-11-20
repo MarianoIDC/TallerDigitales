@@ -26,8 +26,10 @@ MUX iMux2 (ena_mux2, dataOut, aluResult, WD3); //Por hacer
 //Cambios:
 SignExt iSE (offset, SignImm); // Prieto en Progreso
 
+//Cambios:
 ShiftLeft iSL (SignImm, SignImm2); //Por hacer
 
+//Cambios: 
 Sumador iPB (SignImm2, PCp4, PCBranch); //Por hacer
 
 //Cambios:

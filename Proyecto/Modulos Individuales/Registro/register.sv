@@ -1,22 +1,23 @@
-module register(rst, clk, we, dir, data_in, data_out, registerBank);
+module register(clk, rst, we_RF, rm, rn, rd, WD3, RD1, RD2, registerBank);
 
 input logic rst;
 input logic clk;
-input logic we;
-input logic [3:0] dir;
-input logic [31:0]data_in;
-output logic [31:0]data_out;
+input logic we_RF;
+input logic [3:0] rm, rn, rd;
+input logic [31:0] WD3;
+output logic [31:0] RD1, RD2;
 
 output logic [14:0]registerBank[31:0];
 
 always@(posedge clk) begin
-	if(we)
-		registerBank [dir] = data_in;
+		RD1 = registerBank [rm];
+		RD2 = registerBank [rn];
 end
 
 always@(negedge clk) begin
-	if(!we)
-		data_out = registerBank [dir];
+	if(we_RF)
+		registerBank [rd] = WD3;
+
 end
 	
 

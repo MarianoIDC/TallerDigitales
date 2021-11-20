@@ -56,6 +56,22 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/AND_Gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_XOR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_Suma.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_sr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_sl.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_Resta.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_Registro.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_OR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_muxN.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_flagMux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_compA2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_AND.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU_adder1bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/ALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE PC/Counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Mux/Mux2to1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE MemoryData/write_mem.sv
