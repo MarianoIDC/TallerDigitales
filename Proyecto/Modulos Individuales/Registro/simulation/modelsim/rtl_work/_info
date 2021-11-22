@@ -8,56 +8,30 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/simulation/modelsim
+Z0 dD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro/simulation/modelsim
 vregister
-Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1635574691
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1637547392
 !i10b 1
-!s100 geR@BXiPfbgE4?bgR2fAi3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IYRbI>zK>2_A:A>CS>:[YW3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 Wo5ZY0L0F]FHh<8=Y?f2Q1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IaUGhlZP2g<LIACFZHSk9G3
+VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1635574651
-8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv
-FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv
+w1637381462
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro/register.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro/register.sv
 !i122 0
-L0 1 23
-Z5 OV;L;2020.1;71
+L0 1 24
+OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1635574691.000000
-!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register.sv|
+!s108 1637547392.000000
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro/register.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021
-Z9 tCvgOpt 0
-vregister_tb
-R1
-R2
-!i10b 1
-!s100 lj<CAW_Hk8mA:4hNQD5e?3
-R3
-I^3WaT4onUZnAmKVBAk]ji2
-R4
-S1
-R0
-w1635574650
-8D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv
-FD:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv
-!i122 1
-L0 1 29
-R5
-r1
-!s85 0
-31
-R6
-!s107 D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021|D:/Users/Mariano/Documentos/GitHub/TallerDigitales/Proyecto/ProyectoIIS2021/register_tb.sv|
-!i113 1
-R7
-R8
-R9
+o-sv -work work
+!s92 -sv -work work {+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/Modulos Individuales/Registro}
+tCvgOpt 0

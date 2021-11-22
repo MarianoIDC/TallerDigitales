@@ -9,6 +9,7 @@ IntructionMemory iIM (dirIntruction, clk, intruction); //Llama el modulo ROM // 
 //Se hicieron los ajustes para Branch
 deco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rn, Rd, Operand2, OffsetSTD, OffsetBranch); // Listo Martinez 
 
+//Cambios
 RegisterFile iRF (clk, rst, we_RF, rm, rn, rd, WD3, RD1, RD2); //Mariano En Progreso
 
 //Cambios:
