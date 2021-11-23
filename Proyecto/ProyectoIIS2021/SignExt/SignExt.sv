@@ -4,15 +4,9 @@ module SignExt(input logic [23:0] offset, input logic [1:0] op,
 always_comb
 	case (op)
 		2'b00:
-			if(offset [11])
-				SignImm = {16'b11111111, offset [11:0]};
-			else
-				SignImm = {16'b00000000, offset [11:0]};
+			SignImm = {24'b00000000, offset [7:0]};
 		2'b01:
-			if(offset [11])
-				SignImm = {16'b11111111, offset [11:0]};
-			else
-				SignImm = {16'b00000000, offset [11:0]};
+			SignImm = {20'b00000000, offset [11:0]};
 		2'b10:
 			if(offset [23])
 				SignImm = {8'b11111111, offset};
@@ -22,3 +16,4 @@ always_comb
 	endcase
 
 endmodule
+

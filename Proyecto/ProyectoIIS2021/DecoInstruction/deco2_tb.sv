@@ -1,4 +1,4 @@
-module deco_tb();
+module deco2_tb();
 
 logic clk, rst, I, Uno, P, U, B, W, S, L1, L2;
 logic [7:0] address;
