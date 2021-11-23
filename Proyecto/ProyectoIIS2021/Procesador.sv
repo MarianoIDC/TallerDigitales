@@ -1,4 +1,4 @@
-module Procesador (clk, rst, start);
+module Procesador (input logic clk, rst, start);
 
 //Cambios:
 PC iPC (start, clk, rst, branch && zeroFlag, PCp4, PCBranch, dirIntruction); //Por hacer
@@ -37,6 +37,6 @@ Sumador iPB (SignImm2, PCp4, PCBranch); //Por hacer
 Sumador iPCp4 (dirIntruction, 3'd4, PCp4); //Por hacer
 
 //Cambios:
-ControlUnit iCU (cond, opCode, ena_mux2, we_RAM, branch, alu_opCode, ena_mux1, we_RF) //Por hacer
+//ControlUnit iCU (cond, opCode, ena_mux2, we_RAM, branch, alu_opCode, ena_mux1, we_RF) //Por hacer
 
 endmodule
