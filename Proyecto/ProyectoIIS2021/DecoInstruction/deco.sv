@@ -15,7 +15,7 @@ module deco(input logic [31:0] instruccion,
 				output logic [3:0] Cond,
 				output logic [1:0] Op,
 				output logic I,
-				output logic Uno
+				output logic Uno,
 				output logic [3:0] OpCode,
 				output logic P,
 				output logic U,
@@ -33,7 +33,7 @@ module deco(input logic [31:0] instruccion,
 		logic [1:0] operacion;
 		assign operacion = instruccion [27:26];
 		
-		always_ff
+		always_comb
 		case(operacion)
 			//Data Processing  
 			2'b00:
