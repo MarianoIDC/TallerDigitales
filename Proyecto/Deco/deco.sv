@@ -15,7 +15,7 @@ module deco(input logic [31:0] instruccion,
 				output logic [3:0] Cond,
 				output logic [1:0] Op,
 				output logic I,
-				output logic Uno
+				output logic Uno,
 				output logic [3:0] OpCode,
 				output logic P,
 				output logic U,
