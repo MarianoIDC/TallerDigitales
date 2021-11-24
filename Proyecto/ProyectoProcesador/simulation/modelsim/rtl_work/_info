@@ -1,0 +1,198 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim
+vInstructionDeco
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1637734048
+!i10b 1
+!s100 4WMD7U0<_O:`>>D8D;DnN1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImM_fAMBNRbFzGcZ@^<51B0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1637732455
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv
+!i122 4
+L0 1 108
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1637734048.000000
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador
+Z9 tCvgOpt 0
+n@instruction@deco
+vInstructionMemory
+Z10 !s110 1637734047
+!i10b 1
+!s100 VN<cV4>hal3IQ0=gmG8GO2
+R3
+IS9o4YgERK1<eQm@W0miWF3
+R4
+R0
+w1637733799
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v
+!i122 0
+L0 40 61
+R5
+r1
+!s85 0
+31
+Z11 !s108 1637734047.000000
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador
+R9
+n@instruction@memory
+vMux2to1
+R1
+R10
+!i10b 1
+!s100 le9I0L1V6_[5OVb9P8ZM>0
+R3
+IQ:B2DI?003c@aH`d>MkMl3
+R4
+S1
+R0
+w1637733229
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv
+!i122 1
+L0 1 3
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv|
+!i113 1
+R7
+R8
+R9
+n@mux2to1
+vPC
+R1
+R10
+!i10b 1
+!s100 o[D;oU1bAnEAVR62UUUnT2
+R3
+IEG0lfWbN[UFi2jCM5Ti5c3
+R4
+S1
+R0
+w1637733172
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv
+!i122 3
+L0 1 17
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv|
+!i113 1
+R7
+R8
+R9
+n@p@c
+vProcesador
+R1
+R10
+!i10b 1
+!s100 fj21D^UXNVcVHn9k49fhz0
+R3
+InZ@3d6ebj[aiV6AHc:U6D3
+R4
+S1
+R0
+w1637733839
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv
+!i122 2
+L0 1 52
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv|
+!i113 1
+R7
+R8
+R9
+n@procesador
+vProcesador_tb
+R1
+R2
+!i10b 1
+!s100 `6^B:1;ebZ`dBJ_845;K]3
+R3
+IgOcZRA52JB5RQiJ2OKK062
+R4
+S1
+R0
+w1637734015
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv
+!i122 6
+L0 2 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv|
+!i113 1
+R7
+R8
+R9
+n@procesador_tb
+vRegisterFile
+R1
+R2
+!i10b 1
+!s100 ]Jn;4zC2M1_1n[95dC?[@2
+R3
+I_]TbFo[i6YEBEVTHh>73P1
+R4
+S1
+R0
+w1637729795
+8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv
+FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv
+!i122 5
+L0 1 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv|
+!i113 1
+R7
+R8
+R9
+n@register@file
