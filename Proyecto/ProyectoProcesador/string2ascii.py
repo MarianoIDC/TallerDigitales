@@ -5,7 +5,7 @@ def validateString(text, n):
     for i in range(n):
         number = ord(text[i].lower())
         print(number)
-        if (96<number<123 or number==32 or number==241):
+        if (96<number<123 or number==32 or number==241 or number==44 or number==46 or number==59):
             print("caracter valido en la posicion: "+str(i))
         else:
             print("caracter "+text[i]+" no valido en la posicion: "+str(i))
@@ -16,8 +16,8 @@ def string2asc(text):
     text2ascii = []
     n = len(text)
     if(validateString(text, n)):
-        file2 = open("Python\code.txt", "w")
-        file = open("..\..\memory_data.mif", "w")
+        file2 = open(".\code.txt", "w")
+        file = open(".\memory_data.mif", "w")
         file.write("WIDTH=32;\n")
         file.write("DEPTH=2048;\n")
         file.write("ADDRESS_RADIX=UNS;\n")
@@ -50,4 +50,4 @@ def string2asc(text):
 
 
 
-string2asc("Valeria y Mariano")
+string2asc("Mariano y Valeria")

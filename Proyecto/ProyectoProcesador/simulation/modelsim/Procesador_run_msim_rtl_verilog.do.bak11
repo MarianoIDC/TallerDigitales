@@ -6,6 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v}
+vlog -vlog01compat -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v}
 vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv}
 vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv}
 vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv}
