@@ -1,7 +1,8 @@
 `timescale 10 ns / 1 ps
 module Procesador_tb();
 
-logic clk, rst, start;
+logic clk=0;
+logic rst, start;
 
 always #10 clk = ~clk;
 
