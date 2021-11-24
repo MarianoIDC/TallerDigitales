@@ -1,24 +1,16 @@
 module deco_tb();
 		logic [31:0] instruccion;
-		output logic [3:0] Cond,
-		output logic [1:0] Op,
-		output logic I,
-		output logic Uno
-		output logic [3:0] OpCode,
-		output logic P,
-		output logic U,
-		output logic B,
-		output logic W,								
-		output logic S,
-		output logic L1,	
-		output logic L2,	
-		output logic [3:0] Rn, 
-		output logic [3:0] Rd,  
-		output logic [11:0] Operand2,
-		output logic [11:0] OffsetSTD,
-		output logic [23:0] OffsetBranch);
+		logic [3:0] Cond;
+		logic [1:0] Op;
+		logic I, Uno, P, U, B, W, S, L1, L2;
+		logic [3:0] OpCode;
+		logic [3:0] Rn;
+		logic [3:0] Rd;  
+		logic [11:0] Operand2;
+		logic [11:0] OffsetSTD;
+		logic [23:0] OffsetBranch;
 				
-		deco d1(instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rn, Rd, Operand2, OffsetSTD, OffsetBranch);
+		//deco d1(instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rn, Rd, Operand2, OffsetSTD, OffsetBranch);
 				
 		initial begin
 			#2
