@@ -19,7 +19,7 @@ PC #(8) iPC (start, clk, rst, dirIntruction);
 InstructionMemory iIM (dirIntruction, clk, instruccion); 
 InstructionDeco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rm, Rn, Rd, Operand2, OffsetSTD, OffsetBranch); 
 Mux2to1 #(4) iMux1 (1'b1, Rn, 4'b1111, A1);
-Mux2to1 #(4) iMux2 (Rd, Rm, A2);
+Mux2to1 #(4) iMux2 (1'b1, Rd, Rm, A2);
 RegisterFile iRF (clk, rst, we_RF, A2, A1, rd, WD3, RD1, RD2);
 
 //Cambios:
