@@ -19,7 +19,7 @@ module CU_ConditionCheck (input logic [3:0] Cond,
 				
 			4'b1110:
 				CondEx = 1'b0;
-				
-			default: CondEx = 1'b0;		
+			default:
+				CondEx = 1'b0;		
 		endcase
 endmodule 
