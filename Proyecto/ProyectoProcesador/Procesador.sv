@@ -1,26 +1,31 @@
-module Procesador (clk, rst, start, dirIntruction);
+module Procesador (clk, rst, start, dirIntruction, RD1, RD2, instruccion,Rn, Rd, Rm, A1, A2, registerBank);
 
 input logic clk, rst, start;
-
-parameter N = 8;
 
 logic [3:0] Cond, OpCode;
 logic [1:0] Op;
 logic I, Uno,P,U,B,W,S,L1,L2;
-logic [3:0] Rn, Rd;
+output logic [3:0] Rn, Rd, Rm, A1, A2;
+logic [3:0] rd;
 logic [11:0] Operand2;
 logic [11:0] OffsetSTD;
 logic [23:0] OffsetBranch;
-output logic [N - 1:0] dirIntruction;
+output logic [8:0] dirIntruction;
+output logic [31:0] RD1, RD2;
+logic [31:0] WD3 = 32'b1;
+
+output logic [31:0] instruccion;
+output logic [14:0]registerBank[31:0];
 
 //Cambios: 
 //start, clk, rst, PCp4, PCBranch, dirIntruction
-PC #(8) iPC (start, clk, rst, dirIntruction); 
+PC iPC (start, clk, rst, dirIntruction); 
 InstructionMemory iIM (dirIntruction, clk, instruccion); 
 InstructionDeco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rm, Rn, Rd, Operand2, OffsetSTD, OffsetBranch); 
 Mux2to1 #(4) iMux1 (1'b1, Rn, 4'b1111, A1);
 Mux2to1 #(4) iMux2 (1'b1, Rd, Rm, A2);
-RegisterFile iRF (clk, rst, we_RF, A2, A1, rd, WD3, RD1, RD2);
+//clk, rst, we_RF, A2, A1, rd, WD3, RD1, RD2, registerBank
+RegisterFile iRF (clk, rst, 1'b1, A2, A1, Rd, WD3, RD1, RD2, registerBank);
 
 //Cambios:
 //MUX iMux1 (ena_mux1, RD2, SignImm, scrMux1); //Por hacer

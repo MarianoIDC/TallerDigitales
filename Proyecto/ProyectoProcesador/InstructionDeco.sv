@@ -46,6 +46,7 @@ module InstructionDeco(input logic [31:0] instruccion,
 					S = instruccion [20];
 					Rn = instruccion [19:16];
 					Rd = instruccion [15:12];
+					Rm = instruccion [3:0];
 					Operand2 = instruccion [11:0];
 					
 					P = 1'bx;
