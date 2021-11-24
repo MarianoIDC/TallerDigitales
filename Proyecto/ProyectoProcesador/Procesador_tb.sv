@@ -1,12 +1,14 @@
-`timescale 10 ns / 1 ps
+`timescale 1 ns / 1 ps
 module Procesador_tb();
+
+parameter N = 32;
 
 logic clk=0;
 logic rst, start;
-
+logic [N - 1:0] dirIntruction;
 always #10 clk = ~clk;
 
-Procesador iProc (.clk(clk), .rst(rst), .start(start));
+Procesador iProc (.clk(clk), .rst(rst), .start(start), .dirIntruction(dirIntruction));
 
 
 initial begin

@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim
 vInstructionDeco
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1637734339
+Z2 !s110 1637736043
 !i10b 1
 !s100 4WMD7U0<_O:`>>D8D;DnN1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1637734339.000000
+Z6 !s108 1637736043.000000
 !s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z8 !s92 -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales
 Z9 tCvgOpt 0
 n@instruction@deco
 vInstructionMemory
-Z10 !s110 1637734338
+Z10 !s110 1637736042
 !i10b 1
 !s100 VN<cV4>hal3IQ0=gmG8GO2
 R3
@@ -53,7 +53,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1637734338.000000
+Z11 !s108 1637736042.000000
 !s107 D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador|D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v|
 !i113 1
@@ -119,13 +119,13 @@ vProcesador
 R1
 R2
 !i10b 1
-!s100 fj21D^UXNVcVHn9k49fhz0
+!s100 FChz`lURWTBjeZTfeBTJY0
 R3
-InZ@3d6ebj[aiV6AHc:U6D3
+IhdaGEh>CTmb34a=QSK_Pc3
 R4
 S1
 R0
-w1637733839
+w1637735909
 8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv
 FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv
 !i122 2
@@ -146,17 +146,17 @@ vProcesador_tb
 R1
 R2
 !i10b 1
-!s100 [MLB[8Q?^9PP:@4iTWoGZ2
+!s100 4NclGlUG>SHKg@aa7d]021
 R3
-I@2JM2QX41:n7g?7X5VeZ^1
+IoYL@@i@=bValLbGozZY:F1
 R4
 S1
 R0
-w1637734306
+w1637736007
 8D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv
 FD:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv
 !i122 6
-L0 2 23
+L0 2 25
 R5
 r1
 !s85 0

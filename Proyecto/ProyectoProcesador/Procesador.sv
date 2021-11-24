@@ -1,4 +1,4 @@
-module Procesador (clk, rst, start);
+module Procesador (clk, rst, start, dirIntruction);
 
 input logic clk, rst, start;
 
@@ -11,7 +11,7 @@ logic [3:0] Rn, Rd;
 logic [11:0] Operand2;
 logic [11:0] OffsetSTD;
 logic [23:0] OffsetBranch;
-logic [N - 1:0] dirIntruction;
+output logic [N - 1:0] dirIntruction;
 
 //Cambios: 
 //start, clk, rst, PCp4, PCBranch, dirIntruction
