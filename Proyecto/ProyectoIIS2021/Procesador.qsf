@@ -62,7 +62,11 @@ set_global_assignment -name EDA_TEST_BENCH_NAME test_Mux -section_id eda_simulat
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_Mux
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_Mux -section_id test_Mux
 set_global_assignment -name EDA_TEST_BENCH_FILE Mux/Mux2to1_tb.sv -section_id test_Mux
-set_global_assignment -name SYSTEMVERILOG_FILE Mux/Mux2to1.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE Mux/Mux.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Mux/Mux2to1_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Registro/register.sv
 set_global_assignment -name SYSTEMVERILOG_FILE DecoInstruction/deco2_tb.sv
@@ -96,7 +100,3 @@ set_global_assignment -name SYSTEMVERILOG_FILE Comparador.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Procesador.sv
 set_global_assignment -name QIP_FILE InstructionMemory/rom2.qip
 set_global_assignment -name SYSTEMVERILOG_FILE Procesador_tb.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

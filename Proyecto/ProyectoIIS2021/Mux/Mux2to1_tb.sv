@@ -5,7 +5,7 @@ parameter N = 32;
 logic [N-1:0] A, B, C;
 logic sel; 
 
-Mux2to1 #(N) iMux (.A(A), .B(B), .C(C), .sel(sel));
+MUX #(N) iMux (.A(A), .B(B), .C(C), .sel(sel));
 
 initial begin
     A = 32'b1;
