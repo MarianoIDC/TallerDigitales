@@ -16,7 +16,7 @@ def string2asc(text):
     text2ascii = []
     n = len(text)
     if(validateString(text, n)):
-        file2 = open("Python\code.txt", "w")
+        file2 = open("Python/code.txt", "w")
         file = open("Python\memory_data.mif", "w")
         file.write("WIDTH=8;\n")
         file.write("DEPTH=256;\n")
@@ -50,4 +50,4 @@ def string2asc(text):
 
 
 
-string2asc("Valeria")
+string2asc("Valeria y Mariano")
