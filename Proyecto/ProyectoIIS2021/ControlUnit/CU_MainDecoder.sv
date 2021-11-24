@@ -72,5 +72,16 @@ module CU_MainDecoder (input logic [1:0] Op,
 					RegSrc = 2'bx1;
 					ALUOp = 1'b0;
 				end
+			default:
+				begin 
+					Branch = 1'b0;
+					MemToReg = 1'b0;
+					MemW = 1'b0;
+					ALUSrc = 1'b0;
+					ImmSrc = 2'b00;
+					RegW = 1'b0;
+					RegSrc = 2'b00;
+					ALUOp = 1'b0;
+				end
 		endcase 	
 endmodule 
