@@ -7,113 +7,113 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:36 on Nov 24,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v 
 # -- Compiling module InstructionMemory
 # 
 # Top level modules:
 # 	InstructionMemory
-# End time: 09:09:36 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:02 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:36 on Nov 24,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v 
 # -- Compiling module DataMemory
 # 
 # Top level modules:
 # 	DataMemory
-# End time: 09:09:36 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:02 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:36 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Mux2to1.sv 
 # -- Compiling module Mux2to1
 # 
 # Top level modules:
 # 	Mux2to1
-# End time: 09:09:36 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:02 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:36 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv 
 # -- Compiling module Procesador
 # 
 # Top level modules:
 # 	Procesador
-# End time: 09:09:36 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:02 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:36 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv 
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# End time: 09:09:37 on Nov 24,2021, Elapsed time: 0:00:01
+# End time: 17:40:02 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:37 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv 
+# Start time: 17:40:02 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionDeco.sv 
 # -- Compiling module InstructionDeco
 # 
 # Top level modules:
 # 	InstructionDeco
-# End time: 09:09:37 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:03 on Nov 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:37 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv 
+# Start time: 17:40:03 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/RegisterFile.sv 
 # -- Compiling module RegisterFile
 # 
 # Top level modules:
 # 	RegisterFile
-# End time: 09:09:37 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:03 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador {C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:09:37 on Nov 24,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv 
+# Start time: 17:40:03 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador" C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv 
 # -- Compiling module Procesador_tb
 # 
 # Top level modules:
 # 	Procesador_tb
-# End time: 09:09:37 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 17:40:03 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test Procesador
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test Procesador 
-# Start time: 09:09:37 on Nov 24,2021
+# Start time: 17:40:03 on Nov 24,2021
 # ** Error: (vsim-3170) Could not find 'test'.
 #         Searched libraries:
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
-#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
-#             D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim/rtl_work
-#             D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim/rtl_work
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim/rtl_work
+#             C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/simulation/modelsim/rtl_work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./Procesador_run_msim_rtl_verilog.do PAUSED at line 18
 vsim -L altera_mf_ver -L lpm_ver Procesador_tb
 # vsim -L altera_mf_ver -L lpm_ver Procesador_tb 
-# Start time: 09:09:37 on Nov 24,2021
+# Start time: 17:40:03 on Nov 24,2021
 # Loading sv_std.std
 # Loading work.Procesador_tb
 # Loading work.Procesador
@@ -127,13 +127,24 @@ vsim -L altera_mf_ver -L lpm_ver Procesador_tb
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'dirIntruction'. The port definition is at: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc File: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv Line: 15
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'address'. The port definition is at: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/InstructionMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc/iIM File: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv Line: 25
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'address'. The port definition is at: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc/iDM File: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv Line: 39
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'data'. The port definition is at: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v(43).
-#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc/iDM File: D:/Users/Mariano/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv Line: 39
-# End time: 09:14:11 on Nov 24,2021, Elapsed time: 0:04:34
-# Errors: 1, Warnings: 4
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'dirIntruction'. The port definition is at: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc File: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'dirIntruction'. The port definition is at: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/PC.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc/iPC File: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (8) for port 'address'. The port definition is at: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/DataMemory.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /Procesador_tb/iProc/iDM File: C:/Users/Usuario/Documents/GitHub/TallerDigitales/Proyecto/ProyectoProcesador/Procesador.sv Line: 38
+add wave -position end  sim:/Procesador_tb/clk
+add wave -position end  sim:/Procesador_tb/rst
+add wave -position end  sim:/Procesador_tb/start
+add wave -position end  sim:/Procesador_tb/RD1
+add wave -position end  sim:/Procesador_tb/RD2
+add wave -position end  sim:/Procesador_tb/instruccion
+add wave -position end  sim:/Procesador_tb/dirIntruction
+add wave -position end  sim:/Procesador_tb/dataOut
+add wave -position end  sim:/Procesador_tb/Rn
+add wave -position end  sim:/Procesador_tb/Rd
+add wave -position end  sim:/Procesador_tb/Rm
+add wave -position end  sim:/Procesador_tb/A1
+add wave -position end  sim:/Procesador_tb/A2
+add wave -position end  sim:/Procesador_tb/registerBank
+run -all

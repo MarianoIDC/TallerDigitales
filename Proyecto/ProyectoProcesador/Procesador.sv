@@ -1,4 +1,4 @@
-module Procesador (clk, rst, start, dirIntruction, RD1, RD2, instruccion,Rn, Rd, Rm, A1, A2, registerBank);
+module Procesador (clk, rst, start, dirIntruction, RD1, RD2, instruccion, Rn, Rd, Rm, A1, A2, registerBank, dataOut);
 
 input logic clk, rst, start;
 
@@ -10,10 +10,9 @@ logic [3:0] rd;
 logic [11:0] Operand2;
 logic [11:0] OffsetSTD;
 logic [23:0] OffsetBranch;
-output logic [8:0] dirIntruction;
-output logic [31:0] RD1, RD2;
-logic [31:0] WD3 = 32'b1;
-logic [31:0] dataOut;
+output logic [7:0] dirIntruction;
+output logic [31:0] RD1, RD2, dataOut;
+logic [31:0] WD3 = 32'b1, writeData = 32'b1;
 
 
 output logic [31:0] instruccion;

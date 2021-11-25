@@ -5,8 +5,7 @@ module Procesador_tb();
 
 logic clk=0;
 logic rst, start;
-logic [31:0] dirIntruction;
-logic [31:0] RD1, RD2, instruccion;
+logic [31:0] RD1, RD2, instruccion, dirIntruction, dataOut;
 logic [3:0] Rn, Rd, Rm, A1, A2;
 logic [14:0]registerBank[31:0];
 
@@ -25,7 +24,8 @@ Procesador iProc (
 			.Rm(Rm), 
 			.A1(A1), 
 			.A2(A2), 
-			.registerBank(registerBank)
+			.registerBank(registerBank),
+			.dataOut(dataOut)
 			);
 
 
