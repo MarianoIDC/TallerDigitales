@@ -1,12 +1,14 @@
-module ALU #(parameter P = 32)(A, B, OP, Result, N, Z, C, V);
+module ALU #(parameter P = 32)(A, B, OP, Result, ALUFlags);
 
 //Variables de Entrada
 input logic [P-1:0] A, B;
 input logic [2:0] OP;
 output logic [P-1:0] Result;
 
-output logic Z = 0, N = 0, C = 0, V = 0;
+//logic Z = 0, N = 0, C = 0, V = 0;
 				//led0	led1	led2		led3
+output logic [3:0] ALUFlags;
+				
 logic C_out, Sign;
 
 wire [P-1:0] OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7;
@@ -25,6 +27,6 @@ ALU_sr #(P) sr_mod (A, B, OP_7);		//OP7
 //Mux Selector
 ALU_muxN mux_sel (OP_1, OP_2, OP_3, OP_4, OP_5, OP_6, OP_7, OP, Result);
 
-ALU_flagMux #(P) flag_generator_mod (Result, OP, C_out,Sign, Z,N,V,C);
+ALU_flagMux #(P) flag_generator_mod (Result, OP, C_out,Sign, ALUFlags[3], ALUFlags[2], ALUFlags[1], ALUFlags[0]);
     
 endmodule 

@@ -1,17 +1,20 @@
 `timescale 1 ns / 1 ps
 module Procesador_tb();
 
-
-
 logic clk=0;
 logic rst, start;
 logic [31:0] RD1, RD2, instruccion, dirIntruction, dataOut, aluResult;
 logic [3:0] Rn, Rd, Rm, A1, A2;
 logic [31:0]registerBank[14:0];
 
+////////////////Prueba//////////////////////
+logic MemToReg, ALUSrc, PCSrc, RegWrite, MemWrite;
+logic [1:0] ALUControl, ImmSrc, RegSrc; 
+///////////////////////////////////////////
+
 always #10 clk = ~clk;
 
-Procesador iProc (
+Procesador iProc(
 			.clk(clk), 
 			.rst(rst), 
 			.start(start), 
@@ -26,7 +29,15 @@ Procesador iProc (
 			.A2(A2), 
 			.registerBank(registerBank),
 			.dataOut(dataOut),
-			.aluResult(aluResult)
+			.aluResult(aluResult),
+			.MemToReg(MemToReg),
+			.ALUSrc(ALUSrc),
+			.PCSrc(PCSrc),
+			.RegWrite(RegWrite),
+			.MemWrite(MemWrite),
+			.ALUControl(ALUControl),
+			.ImmSrc(ImmSrc),
+			.RegSrc(RegSrc)
 			);
 
 
