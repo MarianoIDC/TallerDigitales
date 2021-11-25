@@ -11,8 +11,8 @@ output logic [31:0]registerBank[14:0];
 
 always@(posedge clk) begin
 	if(!we_RF) begin
-		RD1 = registerBank [A1];
-		RD2 = registerBank [A2];
+		RD1 = A1;
+		RD2 = A2;
 	end
 end
 

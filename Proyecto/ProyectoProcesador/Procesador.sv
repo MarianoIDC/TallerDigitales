@@ -1,18 +1,18 @@
-module Procesador (clk, rst, start, dirIntruction, RD1, RD2, instruccion, Rn, Rd, Rm, A1, A2, registerBank, dataOut);
+module Procesador (clk, rst, start, dirIntruction, RD1, RD2, instruccion, Rn, Rd, Rm, A1, A2, registerBank, dataOut, aluResult);
 
 input logic clk, rst, start;
 
 logic [3:0] Cond, OpCode;
 logic [1:0] Op;
-logic I, Uno,P,U,B,W,S,L1,L2;
+logic I, Uno, P, U, B, W, S, L1, L2, N, Z, C, V;
 output logic [3:0] Rn, Rd, Rm, A1, A2;
 logic [3:0] rd;
 logic [11:0] Operand2;
 logic [11:0] OffsetSTD;
 logic [23:0] OffsetBranch;
 output logic [10:0] dirIntruction;
-output logic [31:0] RD1, RD2, dataOut;
-logic [31:0] WD3 = 32'b1, writeData = 32'b1;
+output logic [31:0] RD1, RD2, dataOut, aluResult;
+logic [31:0] WD3, writeData = 32'b1, scrMuxAlu;
 
 
 output logic [31:0] instruccion;
@@ -26,13 +26,13 @@ InstructionDeco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L
 Mux2to1 #(4) iMux1 (1'b1, Rn, 4'b1111, A1);
 Mux2to1 #(4) iMux2 (1'b1, Rd, Rm, A2);
 //clk, rst, we_RF, A2, A1, rd, WD3, RD1, RD2, registerBank
-RegisterFile iRF (clk, rst, 1'b1, A2, A1, Rd, dataOut, RD1, RD2, registerBank);
+RegisterFile iRF (clk, rst, 1'b0, A2, A1, Rd, dataOut, RD1, RD2, registerBank);
 
 //Cambios:
-//MUX iMux1 (ena_mux1, RD2, SignImm, scrMux1); //Por hacer
+Mux2to1 #(32) iMux3 (1'b1, RD2, SignImm, scrMuxAlu); //Por hacer
 
 //Cambios:
-//ALU(alu_opCode, RD1, acrMux1, aluResult, zeroFlag); // Lista Martinez
+ALU alu(RD1, scrMuxAlu, Op, aluResult, N, Z, C, V); // Lista Martinez
 
 //Cambios:
 DataMemory iDM (dirIntruction, clk, writeData, 1'b0, dataOut); //Llama el modulo RAM //Prieto
@@ -41,7 +41,7 @@ DataMemory iDM (dirIntruction, clk, writeData, 1'b0, dataOut); //Llama el modulo
 //MUX iMux2 (ena_mux2, dataOut, aluResult, WD3); //Por hacer
 
 //Cambios:
-//SignExt iSE (offset, SignImm); // Listo Prieto
+SignExt iSE (instruccion [23:0], SignImm); // Listo Prieto
 
 //Cambios:
 //ShiftLeft iSL (SignImm, SignImm2); //Por hacer
