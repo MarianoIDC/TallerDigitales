@@ -3,19 +3,18 @@ module CU_tb ();
 		logic [1:0] Op, ImmSrc, RegSrc, ALUControl, FlagW;
 		logic [5:0] Funct;
 		logic MemToReg, MemToWrite, ALUSrc, PCSrc, RegWrite, MemWrite;
+		logic [31:0] instruccion;
 						  
-		ControlUnit CU(Cond, ALUFlags, Op, Funct, Rd, MemToReg, ALUControl, ALUSrc, ImmSrc, RegSrc, PCSrc, RegWrite, MemWrite);
+		ControlUnit CU(instruccion [31:28], 4'b0000, instruccion [27:26], instruccion [25:20], [15:12], MemToReg, ALUControl, ALUSrc, ImmSrc, RegSrc, PCSrc, RegWrite, MemWrite);
 		
-		logic [31:0] instruccion = 32'b11100011101000000001000000000000;
+		
 		
 		initial 
 		begin
-		11100100100000010011000000000100;
-		Cond = instruccion [31:28];
-		ALUFlags = 4'b0000;
-		Op = instruccion [27:26];
-		Funct = instruccion [25:20];
-		Rd = instruccion [15:12]; 
+		32'b11100100100000010011000000000100;#20;
+		32'b11100011101000000001000000000000;#20;
+		
+	
 		end
 
 endmodule 
