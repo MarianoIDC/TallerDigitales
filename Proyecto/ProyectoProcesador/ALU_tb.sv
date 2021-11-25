@@ -34,5 +34,4 @@ module ALU_tb();
 
 	end
 
-
 endmodule 
