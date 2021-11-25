@@ -28,7 +28,7 @@ module CU_MainDecoder (input logic [1:0] Op,
 						begin
 							Branch = 1'b0;
 							MemToReg = 1'b0;
-							MemW = 1'b0;
+							MemW = 	;
 							ALUSrc = 1'b1;
 							ImmSrc = 2'b00;
 							RegW = 1'b1;
