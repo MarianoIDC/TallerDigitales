@@ -10,18 +10,18 @@ logic [3:0] rd;
 logic [11:0] Operand2;
 logic [11:0] OffsetSTD;
 logic [23:0] OffsetBranch;
-output logic [7:0] dirIntruction;
+output logic [10:0] dirIntruction;
 output logic [31:0] RD1, RD2, dataOut;
 logic [31:0] WD3 = 32'b1, writeData = 32'b1;
 
 
 output logic [31:0] instruccion;
-output logic [14:0]registerBank[31:0];
+output logic [31:0]registerBank[14:0];
 
 //Cambios: 
 //start, clk, rst, PCp4, PCBranch, dirIntruction
 PC iPC (start, clk, rst, dirIntruction); 
-InstructionMemory iIM (dirIntruction, clk, instruccion); 
+InstructionMemory iIM (dirIntruction[7:0], clk, instruccion); 
 InstructionDeco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L2, Rm, Rn, Rd, Operand2, OffsetSTD, OffsetBranch); 
 Mux2to1 #(4) iMux1 (1'b1, Rn, 4'b1111, A1);
 Mux2to1 #(4) iMux2 (1'b1, Rd, Rm, A2);

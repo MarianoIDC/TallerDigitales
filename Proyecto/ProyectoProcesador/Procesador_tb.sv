@@ -7,7 +7,7 @@ logic clk=0;
 logic rst, start;
 logic [31:0] RD1, RD2, instruccion, dirIntruction, dataOut;
 logic [3:0] Rn, Rd, Rm, A1, A2;
-logic [14:0]registerBank[31:0];
+logic [31:0]registerBank[14:0];
 
 always #10 clk = ~clk;
 
@@ -31,10 +31,9 @@ Procesador iProc (
 
 initial begin
 
-start = 1'b1; #50;
-rst = 1'b1;#10;
+start = 1'b1;
 rst = 1'b0;#10;
-start = 1'b0;
+
 
 
 end
