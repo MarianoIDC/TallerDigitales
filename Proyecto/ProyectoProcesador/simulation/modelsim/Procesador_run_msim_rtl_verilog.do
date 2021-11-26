@@ -31,8 +31,10 @@ vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesado
 vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/CU_PCLogic.sv}
 vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/CU_ConditionCheck.sv}
 vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/CU_AND.sv}
+vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/Sumador.sv}
+vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/ShiftLeft.sv}
 
-vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/Procesador_tb.sv}
+vlog -sv -work work +incdir+C:/Github/TallerDigitales/Proyecto/ProyectoProcesador {C:/Github/TallerDigitales/Proyecto/ProyectoProcesador/CU_tb.sv}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test Procesador
 
