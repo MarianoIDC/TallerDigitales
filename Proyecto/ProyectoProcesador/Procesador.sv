@@ -45,7 +45,11 @@ ALU alu(RD1, scrMuxAlu, Op, aluResult, ALUFlags); // Lista Martinez
 DataMemory iDM (dirIntruction, clk, writeData, 1'b0, dataOut); //Llama el modulo RAM //Prieto
 
 //Cambios:
+<<<<<<< HEAD
 Mux2to1 iMux4 (MemToReg, dataOut, aluResult, WD3); //Por hacer
+=======
+//Mux2to1 iMux3 (MemToReg, dataOut, aluResult, WD3); //Por hacer
+>>>>>>> ecdc19c421063da83755e99f1dfca4f2f7d79aa7
 
 //Cambios:
 SignExt iSE (instruccion [23:0], SignImm); // Listo Prieto
