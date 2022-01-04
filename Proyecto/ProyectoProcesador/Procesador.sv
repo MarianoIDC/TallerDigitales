@@ -33,7 +33,7 @@ InstructionDeco iDI (instruccion, Cond, Op, I, Uno, OpCode, P, U, B, W, S, L1, L
 Mux2to1 #(4) iMux1 (1'b1, Rn, 4'b1111, A1);
 Mux2to1 #(4) iMux2 (1'b1, Rd, Rm, A2);
 //clk, rst, we_RF, A2, A1, rd, WD3, RD1, RD2, registerBank
-RegisterFile iRF (clk, rst, 1'b0, A2, A1, Rd, WD3, RD1, RD2, registerBank);
+RegisterFile iRF (clk, rst, 0, A2, A1, Rd, WD3, RD1, RD2, registerBank);
 
 //Cambios:
 Mux2to1 #(32) iMux3 (1'b1, RD2, SignImm, scrMuxAlu); //Por hacer
@@ -45,7 +45,7 @@ ALU alu(RD1, scrMuxAlu, Op, aluResult, ALUFlags); // Lista Martinez
 DataMemory iDM (dirIntruction, clk, writeData, 1'b0, dataOut); //Llama el modulo RAM //Prieto
 
 //Cambios:
-Mux2to1 iMux3 (MemToReg, dataOut, aluResult, WD3); //Por hacer
+Mux2to1 iMux4 (MemToReg, dataOut, aluResult, WD3); //Por hacer
 
 //Cambios:
 SignExt iSE (instruccion [23:0], SignImm); // Listo Prieto

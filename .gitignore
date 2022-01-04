@@ -60,6 +60,7 @@
 */db/
 */incremental_db/
 */simulation/
+*/rtl_work/
 */timing/
 */testbench/
 */*_sim/
@@ -68,3 +69,4 @@ incremental_db/
 db/
 _output_files/
 PLLJ_PLLSPE_INFO.txt
+Proyecto/ProyectoProcesador/simulation/modelsim/memory_data.ver
